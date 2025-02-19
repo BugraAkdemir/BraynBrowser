@@ -113,9 +113,39 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası__5_ {
+            get {
+                object obj = ResourceManager.GetObject("AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası__6_ {
+            get {
+                object obj = ResourceManager.GetObject("AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası_Kopyası__1_ {
             get {
                 object obj = ResourceManager.GetObject("AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası_Kopyası__2_ {
+            get {
+                object obj = ResourceManager.GetObject("AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +163,39 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bilgiBTN {
+            get {
+                object obj = ResourceManager.GetObject("bilgiBTN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap brBCK {
             get {
                 object obj = ResourceManager.GetObject("brBCK", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap geçmisBt {
+            get {
+                object obj = ResourceManager.GetObject("geçmisBt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gecmisBTN {
+            get {
+                object obj = ResourceManager.GetObject("gecmisBTN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +253,16 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sa {
+            get {
+                object obj = ResourceManager.GetObject("sa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sb {
             get {
                 object obj = ResourceManager.GetObject("sb", resourceCulture);
@@ -216,6 +286,16 @@ namespace MY_BROWSER.Properties {
         internal static System.Drawing.Bitmap setting_ {
             get {
                 object obj = ResourceManager.GetObject("setting ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sonBu {
+            get {
+                object obj = ResourceManager.GetObject("sonBu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

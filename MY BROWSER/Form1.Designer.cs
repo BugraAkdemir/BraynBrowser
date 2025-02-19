@@ -34,16 +34,21 @@ namespace MY_BROWSER
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainPage));
             this.dataİnput = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.OPENpdf = new System.Windows.Forms.Button();
             this.navBarPNL = new System.Windows.Forms.Panel();
             this.TMRtakip = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.ayarlarPanel = new System.Windows.Forms.Panel();
+            this.gecmişPanel = new System.Windows.Forms.Panel();
+            this.gecmisSil = new System.Windows.Forms.Button();
+            this.gecmisList = new System.Windows.Forms.ListBox();
             this.bilgiPanel = new System.Windows.Forms.Panel();
             this.hakkındaLBL = new System.Windows.Forms.Label();
             this.verionLBL = new System.Windows.Forms.Label();
-            this.BTNbilgi = new System.Windows.Forms.Button();
             this.panelTrayıcı = new System.Windows.Forms.Panel();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.gemisBTN = new System.Windows.Forms.Button();
+            this.BTNbilgi = new System.Windows.Forms.Button();
             this.ayarlarBTN = new System.Windows.Forms.Button();
             this.BTNback = new System.Windows.Forms.Button();
             this.BTNev = new System.Windows.Forms.Button();
@@ -58,6 +63,7 @@ namespace MY_BROWSER
             this.navBarPNL.SuspendLayout();
             this.panel2.SuspendLayout();
             this.ayarlarPanel.SuspendLayout();
+            this.gecmişPanel.SuspendLayout();
             this.bilgiPanel.SuspendLayout();
             this.panelTrayıcı.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
@@ -86,6 +92,7 @@ namespace MY_BROWSER
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.OPENpdf);
             this.panel1.Controls.Add(this.dataİnput);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -93,6 +100,16 @@ namespace MY_BROWSER
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(491, 208);
             this.panel1.TabIndex = 2;
+            // 
+            // OPENpdf
+            // 
+            this.OPENpdf.Location = new System.Drawing.Point(413, 182);
+            this.OPENpdf.Name = "OPENpdf";
+            this.OPENpdf.Size = new System.Drawing.Size(75, 23);
+            this.OPENpdf.TabIndex = 5;
+            this.OPENpdf.Text = "PDF AÇ";
+            this.OPENpdf.UseVisualStyleBackColor = true;
+            this.OPENpdf.Click += new System.EventHandler(this.OPENpdf_Click);
             // 
             // navBarPNL
             // 
@@ -129,13 +146,44 @@ namespace MY_BROWSER
             // ayarlarPanel
             // 
             this.ayarlarPanel.BackColor = System.Drawing.SystemColors.Menu;
+            this.ayarlarPanel.Controls.Add(this.gecmişPanel);
+            this.ayarlarPanel.Controls.Add(this.gemisBTN);
             this.ayarlarPanel.Controls.Add(this.bilgiPanel);
             this.ayarlarPanel.Controls.Add(this.BTNbilgi);
             this.ayarlarPanel.Location = new System.Drawing.Point(932, 83);
             this.ayarlarPanel.Name = "ayarlarPanel";
-            this.ayarlarPanel.Size = new System.Drawing.Size(283, 394);
+            this.ayarlarPanel.Size = new System.Drawing.Size(283, 513);
             this.ayarlarPanel.TabIndex = 6;
             this.ayarlarPanel.Visible = false;
+            // 
+            // gecmişPanel
+            // 
+            this.gecmişPanel.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.gecmişPanel.Controls.Add(this.gecmisSil);
+            this.gecmişPanel.Controls.Add(this.gecmisList);
+            this.gecmişPanel.Location = new System.Drawing.Point(13, 203);
+            this.gecmişPanel.Name = "gecmişPanel";
+            this.gecmişPanel.Size = new System.Drawing.Size(260, 254);
+            this.gecmişPanel.TabIndex = 9;
+            this.gecmişPanel.Visible = false;
+            // 
+            // gecmisSil
+            // 
+            this.gecmisSil.Location = new System.Drawing.Point(3, 222);
+            this.gecmisSil.Name = "gecmisSil";
+            this.gecmisSil.Size = new System.Drawing.Size(250, 23);
+            this.gecmisSil.TabIndex = 10;
+            this.gecmisSil.Text = "Geçmiş Sil";
+            this.gecmisSil.UseVisualStyleBackColor = true;
+            this.gecmisSil.Click += new System.EventHandler(this.gecmisSil_Click);
+            // 
+            // gecmisList
+            // 
+            this.gecmisList.FormattingEnabled = true;
+            this.gecmisList.Location = new System.Drawing.Point(3, 4);
+            this.gecmisList.Name = "gecmisList";
+            this.gecmisList.Size = new System.Drawing.Size(250, 212);
+            this.gecmisList.TabIndex = 0;
             // 
             // bilgiPanel
             // 
@@ -166,21 +214,11 @@ namespace MY_BROWSER
             this.verionLBL.Size = new System.Drawing.Size(0, 13);
             this.verionLBL.TabIndex = 0;
             // 
-            // BTNbilgi
-            // 
-            this.BTNbilgi.Location = new System.Drawing.Point(14, 14);
-            this.BTNbilgi.Name = "BTNbilgi";
-            this.BTNbilgi.Size = new System.Drawing.Size(135, 23);
-            this.BTNbilgi.TabIndex = 0;
-            this.BTNbilgi.Text = "Bilgi";
-            this.BTNbilgi.UseVisualStyleBackColor = true;
-            this.BTNbilgi.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panelTrayıcı
             // 
             this.panelTrayıcı.BackColor = System.Drawing.SystemColors.Control;
             this.panelTrayıcı.Controls.Add(this.webView21);
-            this.panelTrayıcı.Location = new System.Drawing.Point(53, 342);
+            this.panelTrayıcı.Location = new System.Drawing.Point(491, 405);
             this.panelTrayıcı.Name = "panelTrayıcı";
             this.panelTrayıcı.Size = new System.Drawing.Size(252, 149);
             this.panelTrayıcı.TabIndex = 7;
@@ -196,6 +234,34 @@ namespace MY_BROWSER
             this.webView21.Size = new System.Drawing.Size(246, 143);
             this.webView21.TabIndex = 0;
             this.webView21.ZoomFactor = 1D;
+            this.webView21.SourceChanged += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs>(this.webView21_SourceChanged);
+            // 
+            // gemisBTN
+            // 
+            this.gemisBTN.BackColor = System.Drawing.Color.Transparent;
+            this.gemisBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.gecmisBTN;
+            this.gemisBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gemisBTN.FlatAppearance.BorderSize = 0;
+            this.gemisBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gemisBTN.Location = new System.Drawing.Point(148, 14);
+            this.gemisBTN.Name = "gemisBTN";
+            this.gemisBTN.Size = new System.Drawing.Size(135, 23);
+            this.gemisBTN.TabIndex = 8;
+            this.gemisBTN.UseVisualStyleBackColor = false;
+            this.gemisBTN.Click += new System.EventHandler(this.gemisBTN_Click);
+            // 
+            // BTNbilgi
+            // 
+            this.BTNbilgi.BackgroundImage = global::MY_BROWSER.Properties.Resources.bilgiBTN;
+            this.BTNbilgi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BTNbilgi.FlatAppearance.BorderSize = 0;
+            this.BTNbilgi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNbilgi.Location = new System.Drawing.Point(3, 14);
+            this.BTNbilgi.Name = "BTNbilgi";
+            this.BTNbilgi.Size = new System.Drawing.Size(135, 23);
+            this.BTNbilgi.TabIndex = 0;
+            this.BTNbilgi.UseVisualStyleBackColor = true;
+            this.BTNbilgi.Click += new System.EventHandler(this.button1_Click);
             // 
             // ayarlarBTN
             // 
@@ -243,6 +309,7 @@ namespace MY_BROWSER
             // 
             this.logoIMGbox.BackColor = System.Drawing.Color.Transparent;
             this.logoIMGbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoIMGbox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.logoIMGbox.Image = global::MY_BROWSER.Properties.Resources.logo;
             this.logoIMGbox.Location = new System.Drawing.Point(0, 0);
             this.logoIMGbox.Name = "logoIMGbox";
@@ -332,6 +399,7 @@ namespace MY_BROWSER
             // 
             // mainPage
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -348,6 +416,8 @@ namespace MY_BROWSER
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.mainPage_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.mainPage_DragEnter);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.mainPage_KeyDown);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
@@ -355,6 +425,7 @@ namespace MY_BROWSER
             this.navBarPNL.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ayarlarPanel.ResumeLayout(false);
+            this.gecmişPanel.ResumeLayout(false);
             this.bilgiPanel.ResumeLayout(false);
             this.bilgiPanel.PerformLayout();
             this.panelTrayıcı.ResumeLayout(false);
@@ -389,6 +460,11 @@ namespace MY_BROWSER
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
         private System.Windows.Forms.Button BTNev;
         private System.Windows.Forms.Button BTNback;
+        private System.Windows.Forms.Button OPENpdf;
+        private System.Windows.Forms.Panel gecmişPanel;
+        private System.Windows.Forms.Button gecmisSil;
+        private System.Windows.Forms.ListBox gecmisList;
+        private System.Windows.Forms.Button gemisBTN;
     }
 }
 

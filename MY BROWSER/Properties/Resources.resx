@@ -136,11 +136,26 @@
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gecmisBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gecmisBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adsız tasarım (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adsız tasarım (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,16 +172,25 @@
   <data name="homeİcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\homeİcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimaze" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\minimaze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="sb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Adsız tasarım (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Adsız tasarım (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimaze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minimaze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="geçmisBt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geçmisBt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (6).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sonBu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sonBu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bilgiBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bilgiBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

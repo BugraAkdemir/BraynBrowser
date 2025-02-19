@@ -1,8 +1,5 @@
-2025/02/19-15:35:24.852 1284 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/02/19-15:35:24.858 1284 Recovering log #12
-2025/02/19-15:35:24.858 1284 Level-0 table #15: started
-2025/02/19-15:35:24.864 1284 Level-0 table #15: 73881 bytes OK
-2025/02/19-15:35:24.870 1284 Delete type=0 #12
-2025/02/19-15:36:25.912 22ec Level-0 table #18: started
-2025/02/19-15:36:25.917 22ec Level-0 table #18: 70706 bytes OK
-2025/02/19-15:36:25.921 22ec Delete type=0 #16
+2025/02/19-19:24:56.839 3644 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/02/19-19:24:56.844 3644 Recovering log #30
+2025/02/19-19:24:56.845 3644 Level-0 table #33: started
+2025/02/19-19:24:56.852 3644 Level-0 table #33: 68739 bytes OK
+2025/02/19-19:24:56.857 3644 Delete type=0 #30

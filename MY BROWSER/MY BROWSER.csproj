@@ -143,6 +143,30 @@
   <ItemGroup>
     <None Include="Resources\back.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geçmisBt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AKD CARGO %28300 x 150 piksel%29 %28727 x 150 piksel%29 Kopyası Kopyası %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AKD CARGO %28300 x 150 piksel%29 %28727 x 150 piksel%29 Kopyası %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AKD CARGO %28300 x 150 piksel%29 %28727 x 150 piksel%29 Kopyası %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonBu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gecmisBTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bilgiBTN.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
