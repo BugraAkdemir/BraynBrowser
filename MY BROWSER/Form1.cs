@@ -4,17 +4,24 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
+using System.Reflection.Emit;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2;
+using Microsoft.Web.WebView2.WinForms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MY_BROWSER
 {
     public partial class mainPage : Form
-    {   
+    {
+        public string versiontxt = "v1.2 - Closed Beta";
+
         private bool pncKnt = false;
+        private bool ayarlarPNCkn = false;
 
 
         private bool mouseDown = false;
@@ -38,6 +45,9 @@ namespace MY_BROWSER
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            verionLBL.Text = $"Uygulama Sürümü: {versiontxt}";
+
+
             this.Resize += new EventHandler(Form1_Resize);
             pncKnt = false;
 
@@ -65,6 +75,23 @@ namespace MY_BROWSER
 
             this.KeyPreview = true; // Form’un klavye olaylarını önce işlemesini sağlar
 
+            
+        
+            this.MaximizedBounds = Screen.PrimaryScreen.WorkingArea; // Kullanılabilir alanı kullan
+                                                                     //this.FormBorderStyle = FormBorderStyle.Sizable; // Yeniden boyutlandırılabilir olsun
+
+            dataİnput.Height = 25;
+
+            dataİnput.Text = "Google'da Arayın Veya Bir URL Girin"; // Varsayılan metni ekle
+            dataİnput.ForeColor = Color.Gray; // Placeholder rengi
+
+            dataİnput.Enter += dataİnput_Enter; // Tıklanınca çalışacak
+            dataİnput.Leave += dataİnput_Leave; // Dışına çıkınca çalışacak
+
+            this.ActiveControl = panel1; // Varsa bir `Label`, `Panel` veya başka bir kontrolü odakla
+
+            BTNback.Visible = false;
+            
         }
 
 
@@ -73,23 +100,27 @@ namespace MY_BROWSER
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void Form1_Resize(object sender, EventArgs e)
         {
             panel1.Left = (this.ClientSize.Width - panel1.Width) / 2;
-            panel1.Top = (this.ClientSize.Height - panel1.Height) / 2;
+            panel1.Top = 200;
 
 
             navBarPNL.Top = 0; // Paneli en üste sabitle
             navBarPNL.Left = 0; // Panelin sol kenardan başlamasını sağla
             navBarPNL.Width = this.ClientSize.Width; // Paneli pencere genişliğine göre ayarla
             navBarPNL.Height = 38; // Panel yüksekliği (Bunu değiştirebilirsin)
-            //BTNcıkıs.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+                                   //BTNcıkıs.Anchor = AnchorStyles.Top | AnchorStyles.Left;
 
-           
-        
+            panel2.Top = 40; // Paneli en üste sabitle
+            panel2.Left = 0; // Panelin sol kenardan başlamasını sağla
+            panel2.Width = this.ClientSize.Width; // Paneli pencere genişliğine göre ayarla
+            panel2.Height = 38; // Panel yüksekliği (Bunu değiştirebilirsin)
+                                   //BTNcıkıs.Anchor = AnchorStyles.Top | AnchorStyles.Left;
+
             int topYuk = 4; // Sağ kenardan boşluk (istersen 0 yap)
             BTNcıkıs.Top = topYuk;
             BTNcıkıs.Left = this.ClientSize.Width - BTNcıkıs.Width - 10; // En sağa al
@@ -103,9 +134,21 @@ namespace MY_BROWSER
             pncBTN.Top = topYuk;
             pncBTN.Left = this.ClientSize.Width - pncBTN.Width - 110;
 
+            ayarlarBTN.Top = topYuk;
+            ayarlarBTN.Left = this.ClientSize.Width - ayarlarBTN.Width - 10;
 
+            ayarlarPanel.Top = 83;
+            ayarlarPanel.Left = this.ClientSize.Width - ayarlarPanel.Width - 8;
 
+            // Eğer panel görünüyorsa
+            if (panelTrayıcı.Visible)
+            {
+                // Panelin boyutlarını formun boyutlarına göre ayarlıyoruz
+                panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height);
 
+                // WebView2'nin boyutlarını da panelle uyumlu hale getiriyoruz
+                webView21.Size = panelTrayıcı.Size;
+            }
         }
 
         private void BTNcıkıs_Click(object sender, EventArgs e)
@@ -164,6 +207,7 @@ namespace MY_BROWSER
 
                 
             }
+            
         }
 
         private void navBarPNL_MouseDown(object sender, MouseEventArgs e)
@@ -267,12 +311,116 @@ namespace MY_BROWSER
 
         private void mainPage_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            
+        }
+
+        private void dataİnput_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataİnput_Enter(object sender, EventArgs e)
+        {
+            if (dataİnput.Text == "Google'da Arayın Veya Bir URL Girin")
             {
-                MessageBox.Show("Enter aKTİF");
+                dataİnput.Text = ""; // İçeriği temizle
+                dataİnput.ForeColor = Color.Black; // Normal yazı rengi
+            }
+        }
+
+        private void dataİnput_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(dataİnput.Text))
+            {
+                dataİnput.Text = "Google'da Arayın Veya Bir URL Girin"; // Tekrar placeholder ekle
+                dataİnput.ForeColor = Color.Gray; // Placeholder rengine geri dön
+            }
+        }
+
+        private void ayarlarBTN_Click(object sender, EventArgs e)
+        {
+            ayarlarPanel.Visible = !ayarlarPanel.Visible;
+        }
+
+        private void bilgiPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            bilgiPanel.Visible = !bilgiPanel.Visible;
+        }
+
+        private void dataİnput_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void dataİnput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // TextBox'ın içi boşsa, uyarı göster
+                if (string.IsNullOrEmpty(dataİnput.Text))
+                {
+                    //pass
+                }
+                else
+                {
+                    int marginTop = 40; // Üstte bırakacağımız boşluk
+
+                    // Panelin boyutlarını ve konumunu ayarla
+                    panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
+                    panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - marginTop);  // Panel formu kaplasın
+                    panelTrayıcı.Visible = true; // Paneli görünür yap
+
+                    // WebView2'nin boyutlarını ayarla (panelin içine dahil olacak şekilde)
+                    webView21.Size = new Size(panelTrayıcı.Width, panelTrayıcı.Height);
+                    webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
+
+                    string aramaTerimi = dataİnput.Text; // TextBox'tan metni al
+                    if (!string.IsNullOrWhiteSpace(aramaTerimi))
+                    {
+                        string googleUrl = $"https://www.google.com/search?q={Uri.EscapeDataString(aramaTerimi)}";
+                        webView21.Source = new Uri(googleUrl); // WebView2'de aç
+                    }
+                }
+
+
                 e.SuppressKeyPress = true; // Enter’ın normal işlevini engelle
             }
         }
+
+        private void BTNev_Click(object sender, EventArgs e)
+        {
+            // Eğer panel açık (görünürse), paneli kapat
+            if (panelTrayıcı.Visible)
+            {
+                panelTrayıcı.Visible = false; // Paneli gizle
+            }
+            // Eğer panel kapalıysa, hiçbir şey yapma
+            else
+            {
+                
+            }
+        }
+
+        private void BTNback_Click(object sender, EventArgs e)
+        {
+            //// Eğer panel açık (görünürse), paneli kapat
+            //if (panelTrayıcı.Visible)
+            //{
+            //    panelTrayıcı.Visible = false; // Paneli gizle
+            //}
+            //// Eğer panel kapalıysa, hiçbir şey yapma
+            //else if(webView21.Source == new Uri("https://www.google.com/search?q="))
+            //{
+            //    panelTrayıcı.Visible = true;
+            //}
+        }
+
+
 
         //private void panel1_Paint(object sender, PaintEventArgs e)
         //{

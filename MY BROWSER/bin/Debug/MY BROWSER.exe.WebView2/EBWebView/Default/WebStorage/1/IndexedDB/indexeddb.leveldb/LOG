@@ -1,2 +1,3 @@
-2025/02/18-21:20:55.698 16b8 Creating DB C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb since it was missing.
-2025/02/18-21:20:55.713 16b8 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2025/02/19-15:36:05.011 5024 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/MANIFEST-000001
+2025/02/19-15:36:05.012 5024 Recovering log #3
+2025/02/19-15:36:05.013 5024 Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\WebStorage\1\IndexedDB\indexeddb.leveldb/000003.log 
