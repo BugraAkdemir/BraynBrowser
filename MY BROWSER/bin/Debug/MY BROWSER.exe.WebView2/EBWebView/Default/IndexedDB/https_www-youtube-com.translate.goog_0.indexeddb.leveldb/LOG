@@ -1,0 +1,6 @@
+2025/02/19-20:37:04.177 34f4 Creating DB C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\IndexedDB\https_www-youtube-com.translate.goog_0.indexeddb.leveldb since it was missing.
+2025/02/19-20:37:04.189 34f4 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\IndexedDB\https_www-youtube-com.translate.goog_0.indexeddb.leveldb/MANIFEST-000001
+2025/02/19-20:37:05.693 99c Level-0 table #5: started
+2025/02/19-20:37:05.699 99c Level-0 table #5: 19733 bytes OK
+2025/02/19-20:37:05.705 99c Delete type=0 #3
+2025/02/19-20:37:05.705 3ec8 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
