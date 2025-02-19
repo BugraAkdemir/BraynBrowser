@@ -13,20 +13,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Web.WebView2;
 using Microsoft.Web.WebView2.WinForms;
-using Microsoft.Web.WebView2.Wpf;
+
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MY_BROWSER
 {
 	public partial class mainPage : Form
 	{
-		public string versiontxt = "v1.5 - Closed Beta";
+		public string versiontxt = "v1.7 - Closed Beta";
 
 		private bool pncKnt = false;
 		private bool ayarlarPNCkn = false;
-
-
-		private bool mouseDown = false;
+       
+        private bool mouseDown = false;
 		private Point lastLocation;
 		private bool wasMaximized = false;
 		private Size oldSize;
@@ -37,7 +36,11 @@ namespace MY_BROWSER
 		private Point lastMousePosition; // Son mouse konumu
 		private int borderSize = 5; // Kenarlardan kaç piksel içinde boyutlandırma çalışsın
 
-		public mainPage()
+
+        // Geçmişi tutan liste
+        private List<string> history = new List<string>();
+
+        public mainPage()
 		{
 			InitializeComponent();
 		   
@@ -92,7 +95,7 @@ namespace MY_BROWSER
 
 			this.ActiveControl = panel1; // Varsa bir `Label`, `Panel` veya başka bir kontrolü odakla
 
-			BTNback.Visible = false;
+			//BTNback.Visible = false;
 
             this.AllowDrop = true;
             this.DragEnter += mainPage_DragEnter;
@@ -374,7 +377,7 @@ namespace MY_BROWSER
 				}
 				else
 				{
-					int marginTop = 40; // Üstte bırakacağımız boşluk
+					int marginTop = 78; // Üstte bırakacağımız boşluk
 
 					// Panelin boyutlarını ve konumunu ayarla
 					panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
@@ -427,31 +430,53 @@ namespace MY_BROWSER
 
 		private void BTNev_Click(object sender, EventArgs e)
 		{
-			// Eğer panel açık (görünürse), paneli kapat
-			if (panelTrayıcı.Visible)
-			{
-				panelTrayıcı.Visible = false; // Paneli gizle
-			}
-			// Eğer panel kapalıysa, hiçbir şey yapma
-			else
-			{
-				
-			}
-		}
+				// Panel gizliyse varsayılan metni ekleyelim
+            if (!panelTrayıcı.Visible)
+            {
+                txtUrl.Text = "Google'da Arayın veya Bir URL Girin"; // Varsayılan yazı
+                txtUrl.ForeColor = Color.Gray; // Yazıyı gri yap
+            }
+            else
+            {
+                txtUrl.Clear(); // Panel görünüyorsa text box'u temizle
+            }
+
+            // Panel durumunu kontrol et ve gizle/ aç
+            if (panelTrayıcı.Visible)
+            {
+                txtUrl.Text = "Google'da Arayın veya Bir URL Girin"; // Varsayılan yazı
+                panelTrayıcı.Visible = false; // Eğer panel açıksa, gizle
+            }
+            else
+            {
+                panelTrayıcı.Visible = true; // Paneli aç
+            }
+
+            // Ana sayfa URL'sini yükleyelim
+            
+
+            // Geçmiş listesine eklememek için eski URL'yi saklayalım
+            // Eğer bir önceki URL varsa, önceki URL'yi eklemeyelim
+            
+        }
 
 		private void BTNback_Click(object sender, EventArgs e)
 		{
-			//// Eğer panel açık (görünürse), paneli kapat
-			//if (panelTrayıcı.Visible)
-			//{
-			//    panelTrayıcı.Visible = false; // Paneli gizle
-			//}
-			//// Eğer panel kapalıysa, hiçbir şey yapma
-			//else if(webView21.Source == new Uri("https://www.google.com/search?q="))
-			//{
-			//    panelTrayıcı.Visible = true;
-			//}
-		}
+            // Geçmişte 2 veya daha fazla sayfa varsa, geri gitmek mümkündür
+            if (history.Count > 1)
+            {
+                // Geçmişten son iki sayfayı çıkar
+                history.RemoveAt(history.Count - 1); // Son sayfayı çıkarıyoruz
+
+                // Geriye dönülmüş sayfayı yükle
+                string previousUrl = history[history.Count - 1];
+                webView21.Source = new Uri(previousUrl);
+            }
+            else
+            {
+                MessageBox.Show("Geçmişte gidilecek bir sayfa yok.");
+            }
+        }
 
         private void OPENpdf_Click(object sender, EventArgs e)
         {
@@ -466,14 +491,15 @@ namespace MY_BROWSER
             }
         }
 
+
         private void OpenPDF(string pdfPath)
         {
             if (File.Exists(pdfPath)) // Dosyanın var olup olmadığını kontrol et
             {
                 panelTrayıcı.Visible = true; // Paneli görünür yap
 				panelTrayıcı.Dock = DockStyle.None; // Dock'u kapat ki manuel ayarlayabilelim
-                panelTrayıcı.Location = new Point(0, 40); // Paneli 50 piksel aşağıya kaydır
-                panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - 100); // Paneli tam ekran yap ama üstte boşluk bırak
+                panelTrayıcı.Location = new Point(0, 78); // Paneli 50 piksel aşağıya kaydır
+                panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - 80); // Paneli tam ekran yap ama üstte boşluk bırak
 
                 webView21.Dock = DockStyle.Fill; // WebView2'yi tam ekran yap
                 webView21.Source = new Uri(pdfPath); // PDF dosyasını WebView2 içinde aç
@@ -535,6 +561,7 @@ namespace MY_BROWSER
 
             if (!string.IsNullOrEmpty(url)) // Eğer URL boş değilse
             {
+                txtUrl.Text = webView21.Source.ToString(); // URL'yi TextBox'a aktar
                 File.AppendAllText(dosyaYolu, url + Environment.NewLine); // URL'yi yeni satıra ekle
             }
         }
@@ -556,6 +583,62 @@ namespace MY_BROWSER
             {
                 MessageBox.Show("Dosya bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txtUrl_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) // Enter'a basıldığında
+            {
+                if (!string.IsNullOrWhiteSpace(txtUrl.Text)) // Boş değilse
+                {	
+					if(txtUrl.Text != $"https://{txtUrl}")
+					{
+                        string aa = "https://www.google.com/search?q=" + Uri.EscapeDataString(txtUrl.Text);
+						webView21.Source = new Uri(aa);
+						
+
+                        panelTrayıcı.Visible = true; // Paneli görünür yap
+                        panelTrayıcı.Dock = DockStyle.None; // Dock'u kapat ki manuel ayarlayabilelim
+                        panelTrayıcı.Location = new Point(0, 78); // Paneli 50 piksel aşağıya kaydır
+                        panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - 80); // Paneli tam ekran yap ama üstte boşluk bırak
+
+                        webView21.Dock = DockStyle.Fill; // WebView2'yi tam ekran yap
+                        
+
+                    }
+
+					else
+					{
+                        webView21.Source = new Uri(txtUrl.Text); // WebView2’de aç
+                    }
+                }
+                e.SuppressKeyPress = true; // Enter’ın varsayılan sesini engelle
+            }
+        }
+
+        private void txtUrl_Enter(object sender, EventArgs e)
+        {
+			txtUrl.Text = "";
+        }
+
+        private void txtUrl_Leave(object sender, EventArgs e)
+        {
+			txtUrl.Text = "Google'da Arayın Veya Bir Url Girin";
+        }
+
+        private void webView21_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
+        {
+            // Sayfa yüklendiğinde, URL'yi listeye ekliyoruz
+            string currentUrl = webView21.Source.ToString();
+
+            // Eğer geçmişte 4 sayfa varsa, en eski sayfayı çıkarıyoruz
+            if (history.Count >= 4)
+            {
+                history.RemoveAt(0); // En eski sayfayı çıkar
+            }
+
+            // Yeni sayfayı geçmiş listesine ekliyoruz
+            history.Add(currentUrl);
         }
     }
 }

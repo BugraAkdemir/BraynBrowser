@@ -183,6 +183,36 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cıkısBtn {
+            get {
+                object obj = ResourceManager.GetObject("cıkısBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EXİTbTN {
+            get {
+                object obj = ResourceManager.GetObject("EXİTbTN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FFsC {
+            get {
+                object obj = ResourceManager.GetObject("FFsC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap geçmisBt {
             get {
                 object obj = ResourceManager.GetObject("geçmisBt", resourceCulture);
@@ -233,6 +263,26 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap miniMazeBtn {
+            get {
+                object obj = ResourceManager.GetObject("miniMazeBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mmb {
+            get {
+                object obj = ResourceManager.GetObject("mmb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_pixabay_531880 {
             get {
                 object obj = ResourceManager.GetObject("pexels-pixabay-531880", resourceCulture);
@@ -243,9 +293,39 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pnC {
+            get {
+                object obj = ResourceManager.GetObject("pnC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pncBt {
             get {
                 object obj = ResourceManager.GetObject("pncBt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pncBtn {
+            get {
+                object obj = ResourceManager.GetObject("pncBtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pnvv {
+            get {
+                object obj = ResourceManager.GetObject("pnvv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

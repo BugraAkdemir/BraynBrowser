@@ -167,6 +167,30 @@
   <ItemGroup>
     <None Include="Resources\bilgiBTN.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkısBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniMazeBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pncBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnvv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EXİTbTN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FFsC.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.3065.39\build\Microsoft.Web.WebView2.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
