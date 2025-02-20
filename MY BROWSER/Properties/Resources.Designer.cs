@@ -233,6 +233,16 @@ namespace MY_BROWSER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap goFardddd {
+            get {
+                object obj = ResourceManager.GetObject("goFardddd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap homeİcon {
             get {
                 object obj = ResourceManager.GetObject("homeİcon", resourceCulture);
@@ -326,6 +336,16 @@ namespace MY_BROWSER.Properties {
         internal static System.Drawing.Bitmap pnvv {
             get {
                 object obj = ResourceManager.GetObject("pnvv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap reflash {
+            get {
+                object obj = ResourceManager.GetObject("reflash", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -20,9 +20,10 @@ namespace MY_BROWSER
 {
 	public partial class mainPage : Form
 	{
-		public string versiontxt = "v1.7 - Closed Beta";
-
-		private bool pncKnt = false;
+		public string versiontxt = "v1.9 - Closed Beta";
+		
+		private int mevcutIndex = -1; // Başlangıçta bir sayfa ziyaret edilmediği için -1
+        private bool pncKnt = false;
 		private bool ayarlarPNCkn = false;
        
         private bool mouseDown = false;
@@ -39,6 +40,7 @@ namespace MY_BROWSER
 
         // Geçmişi tutan liste
         private List<string> history = new List<string>();
+        List<string> kayitlar = new List<string>();
 
         public mainPage()
 		{
@@ -320,7 +322,10 @@ namespace MY_BROWSER
 
 		private void mainPage_KeyDown(object sender, KeyEventArgs e)
 		{
-			
+			if(e.KeyCode == Keys.F5)
+			{
+				refBTN.PerformClick();
+			}
 		}
 
 		private void dataİnput_Click(object sender, EventArgs e)
@@ -370,8 +375,24 @@ namespace MY_BROWSER
 		{
 			if (e.KeyCode == Keys.Enter)
 			{
-				// TextBox'ın içi boşsa, uyarı göster
-				if (string.IsNullOrEmpty(dataİnput.Text))
+                //string yeniKayit = dataİnput.Text.Trim(); // TextBox’tan veri al ve boşlukları temizle
+
+                //if (!string.IsNullOrEmpty(yeniKayit)) // Boş girişleri engelle
+                //{
+                //    if (kayitlar.Count >= 3)
+                //    {
+                //        kayitlar.RemoveAt(0); // Listenin en eski elemanını sil
+                //    }
+
+                //    kayitlar.Add(yeniKayit); // Yeni kaydı listeye ekle
+
+                //    // Listeyi güncelle
+
+                //}
+
+
+                // TextBox'ın içi boşsa, uyarı göster
+                if (string.IsNullOrEmpty(dataİnput.Text))
 				{
 					//pass
 				}
@@ -423,18 +444,27 @@ namespace MY_BROWSER
 					
                 }
 
+                
 
-				e.SuppressKeyPress = true; // Enter’ın normal işlevini engelle
+				
+
+                e.SuppressKeyPress = true; // Enter’ın normal işlevini engelle
 			}
-		}
+
+           
+        }
 
 		private void BTNev_Click(object sender, EventArgs e)
 		{
+			
+
 				// Panel gizliyse varsayılan metni ekleyelim
             if (!panelTrayıcı.Visible)
             {
                 txtUrl.Text = "Google'da Arayın veya Bir URL Girin"; // Varsayılan yazı
                 txtUrl.ForeColor = Color.Gray; // Yazıyı gri yap
+
+               
             }
             else
             {
@@ -446,35 +476,46 @@ namespace MY_BROWSER
             {
                 txtUrl.Text = "Google'da Arayın veya Bir URL Girin"; // Varsayılan yazı
                 panelTrayıcı.Visible = false; // Eğer panel açıksa, gizle
+
+                panelTrayıcı.Visible = false; // Paneli gizle
+                
+                if (webView21 != null && webView21.CoreWebView2 != null)
+                {
+                    webView21.Source = new Uri("about:blank"); // Boş sayfa yükle
+
+                }
             }
             else
             {
-                panelTrayıcı.Visible = true; // Paneli aç
+                panelTrayıcı.Visible = false; // Paneli aç
+
             }
 
-            // Ana sayfa URL'sini yükleyelim
-            
+			// Ana sayfa URL'sini yükleyelim
 
-            // Geçmiş listesine eklememek için eski URL'yi saklayalım
-            // Eğer bir önceki URL varsa, önceki URL'yi eklemeyelim
-            
+
+			// Geçmiş listesine eklememek için eski URL'yi saklayalım
+			// Eğer bir önceki URL varsa, önceki URL'yi eklemeyelim
+			
+
+
         }
 
 		private void BTNback_Click(object sender, EventArgs e)
 		{
-            // Geçmişte 2 veya daha fazla sayfa varsa, geri gitmek mümkündür
-            if (history.Count > 1)
+            if (webView21.CanGoBack) // Eğer geri gidilecek bir sayfa varsa
             {
-                // Geçmişten son iki sayfayı çıkar
-                history.RemoveAt(history.Count - 1); // Son sayfayı çıkarıyoruz
-
-                // Geriye dönülmüş sayfayı yükle
-                string previousUrl = history[history.Count - 1];
-                webView21.Source = new Uri(previousUrl);
+                webView21.GoBack(); // WebView2'nin yerleşik geri gitme işlemini yap
+            }
+            else if (kayitlar.Count > 1 && mevcutIndex > 0) // WebView2 içinde geri gidilemiyorsa kendi listemizi kullan
+            {
+                mevcutIndex--; // Bir önceki indexe git
+                string oncekiSayfa = kayitlar[mevcutIndex];
+                webView21.CoreWebView2.Navigate(oncekiSayfa);
             }
             else
             {
-                MessageBox.Show("Geçmişte gidilecek bir sayfa yok.");
+                //pass
             }
         }
 
@@ -589,6 +630,8 @@ namespace MY_BROWSER
         {
             if (e.KeyCode == Keys.Enter) // Enter'a basıldığında
             {
+                
+
                 if (!string.IsNullOrWhiteSpace(txtUrl.Text)) // Boş değilse
                 {	
 					if(txtUrl.Text != $"https://{txtUrl}")
@@ -628,17 +671,58 @@ namespace MY_BROWSER
 
         private void webView21_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
         {
-            // Sayfa yüklendiğinde, URL'yi listeye ekliyoruz
-            string currentUrl = webView21.Source.ToString();
-
-            // Eğer geçmişte 4 sayfa varsa, en eski sayfayı çıkarıyoruz
-            if (history.Count >= 4)
+            if (webView21.Source != null)
             {
-                history.RemoveAt(0); // En eski sayfayı çıkar
-            }
+                string yeniUrl = webView21.Source.ToString();
 
-            // Yeni sayfayı geçmiş listesine ekliyoruz
-            history.Add(currentUrl);
+                // Eğer liste boşsa veya en son eklenen URL ile aynı değilse listeye ekleyelim
+                if (kayitlar.Count == 0 || kayitlar[kayitlar.Count - 1] != yeniUrl)
+                {
+                    kayitlar.Add(yeniUrl);
+                    mevcutIndex = kayitlar.Count - 1; // Mevcut indexi güncelle
+                }
+            }
         }
+
+        private void txtUrl_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+			if(webView21 != null && panelTrayıcı.Visible == true)
+			{
+				webView21.Reload();
+
+			}
+        }
+
+        private void BTNgo_Click(object sender, EventArgs e)
+        {
+            if (webView21.CanGoForward) // Eğer ileri gidilecek bir sayfa varsa
+            {
+                webView21.GoForward(); // WebView2'nin yerleşik ileri gitme işlemini yap
+            }
+            else if (kayitlar.Count > 1 && mevcutIndex < kayitlar.Count - 1) // Eğer ileri gitme mümkün değilse kendi listemizi kullan
+            {
+                mevcutIndex++; // Bir sonraki indexe git
+                string sonrakiSayfa = kayitlar[mevcutIndex];
+                webView21.CoreWebView2.Navigate(sonrakiSayfa);
+            }
+            else
+            {
+                //pass
+            }
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+       
     }
 }
