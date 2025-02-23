@@ -618,6 +618,7 @@ namespace MY_BROWSER
             this.BTNappsGmail.Text = "Gmail";
             this.BTNappsGmail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BTNappsGmail.UseVisualStyleBackColor = true;
+            this.BTNappsGmail.Click += new System.EventHandler(this.BTNappsGmail_Click);
             // 
             // button1
             // 
@@ -635,6 +636,7 @@ namespace MY_BROWSER
             this.button1.Text = "Ceviri";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // BTNappsGPT
             // 
@@ -652,6 +654,7 @@ namespace MY_BROWSER
             this.BTNappsGPT.Text = "CHAT GPT";
             this.BTNappsGPT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BTNappsGPT.UseVisualStyleBackColor = true;
+            this.BTNappsGPT.Click += new System.EventHandler(this.BTNappsGPT_Click);
             // 
             // BTNappsGOOGLE
             // 
@@ -669,6 +672,7 @@ namespace MY_BROWSER
             this.BTNappsGOOGLE.Text = "GOOGLE";
             this.BTNappsGOOGLE.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BTNappsGOOGLE.UseVisualStyleBackColor = true;
+            this.BTNappsGOOGLE.Click += new System.EventHandler(this.BTNappsGOOGLE_Click);
             // 
             // BTNappsYT
             // 
@@ -686,6 +690,7 @@ namespace MY_BROWSER
             this.BTNappsYT.Text = "YOUTUBE";
             this.BTNappsYT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BTNappsYT.UseVisualStyleBackColor = true;
+            this.BTNappsYT.Click += new System.EventHandler(this.BTNappsYT_Click);
             // 
             // mainPage
             // 

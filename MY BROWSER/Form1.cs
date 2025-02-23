@@ -922,5 +922,100 @@ namespace MY_BROWSER
         {
             PNLapps.Visible = !PNLapps.Visible;
         }
+
+        private void BTNappsYT_Click(object sender, EventArgs e)
+        {
+			panelTrayıcı.Visible = true;
+			webView21.Source = new Uri("https://www.youtube.com/");
+
+            int marginTop = 78; // Üstte bırakacağımız boşluk
+
+            // Panelin boyutlarını ve konumunu ayarla
+            panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
+            panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - marginTop);  // Panel formu kaplasın
+            panelTrayıcı.Visible = true; // Paneli görünür yap
+
+            // WebView2'nin boyutlarını ayarla (panelin içine dahil olacak şekilde)
+            webView21.Size = new Size(panelTrayıcı.Width, panelTrayıcı.Height);
+            webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
+
+			PNLapps.Visible = false;
+        }
+
+        private void BTNappsGOOGLE_Click(object sender, EventArgs e)
+        {
+            panelTrayıcı.Visible = true;
+            webView21.Source = new Uri("https://www.google.com/");
+
+            int marginTop = 78; // Üstte bırakacağımız boşluk
+
+            // Panelin boyutlarını ve konumunu ayarla
+            panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
+            panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - marginTop);  // Panel formu kaplasın
+            panelTrayıcı.Visible = true; // Paneli görünür yap
+
+            // WebView2'nin boyutlarını ayarla (panelin içine dahil olacak şekilde)
+            webView21.Size = new Size(panelTrayıcı.Width, panelTrayıcı.Height);
+            webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
+
+            PNLapps.Visible = false;
+        }
+
+        private void BTNappsGPT_Click(object sender, EventArgs e)
+        {
+            panelTrayıcı.Visible = true;
+            webView21.Source = new Uri("https://chatgpt.com/");
+
+            int marginTop = 78; // Üstte bırakacağımız boşluk
+
+            // Panelin boyutlarını ve konumunu ayarla
+            panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
+            panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - marginTop);  // Panel formu kaplasın
+            panelTrayıcı.Visible = true; // Paneli görünür yap
+
+            // WebView2'nin boyutlarını ayarla (panelin içine dahil olacak şekilde)
+            webView21.Size = new Size(panelTrayıcı.Width, panelTrayıcı.Height);
+            webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
+
+            PNLapps.Visible = false;
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            panelTrayıcı.Visible = true;
+            webView21.Source = new Uri("https://translate.google.com/");
+
+            int marginTop = 78; // Üstte bırakacağımız boşluk
+
+            // Panelin boyutlarını ve konumunu ayarla
+            panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
+            panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - marginTop);  // Panel formu kaplasın
+            panelTrayıcı.Visible = true; // Paneli görünür yap
+
+            // WebView2'nin boyutlarını ayarla (panelin içine dahil olacak şekilde)
+            webView21.Size = new Size(panelTrayıcı.Width, panelTrayıcı.Height);
+            webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
+
+            PNLapps.Visible = false;
+        }
+
+        private void BTNappsGmail_Click(object sender, EventArgs e)
+        {
+            panelTrayıcı.Visible = true;
+            webView21.Source = new Uri("https://mail.google.com/");
+
+            int marginTop = 78; // Üstte bırakacağımız boşluk
+
+            // Panelin boyutlarını ve konumunu ayarla
+            panelTrayıcı.Location = new Point(0, marginTop);  // Üstten 50px boşluk bırak
+            panelTrayıcı.Size = new Size(this.ClientSize.Width, this.ClientSize.Height - marginTop);  // Panel formu kaplasın
+            panelTrayıcı.Visible = true; // Paneli görünür yap
+
+            // WebView2'nin boyutlarını ayarla (panelin içine dahil olacak şekilde)
+            webView21.Size = new Size(panelTrayıcı.Width, panelTrayıcı.Height);
+            webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
+
+            PNLapps.Visible = false;
+        }
     }
 }

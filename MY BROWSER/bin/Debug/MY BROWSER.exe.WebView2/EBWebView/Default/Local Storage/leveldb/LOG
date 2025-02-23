@@ -1,3 +1,15 @@
-2025/02/23-15:41:24.320 1fdc Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/02/23-15:41:24.326 1fdc Recovering log #225
-2025/02/23-15:41:24.328 1fdc Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000225.log 
+2025/02/23-16:23:42.921 1938 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/02/23-16:23:42.928 1938 Recovering log #229
+2025/02/23-16:23:42.930 1938 Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000229.log 
+2025/02/23-16:24:11.443 3580 Level-0 table #232: started
+2025/02/23-16:24:11.450 3580 Level-0 table #232: 30108 bytes OK
+2025/02/23-16:24:11.454 3580 Delete type=0 #229
+2025/02/23-16:24:11.455 3580 Compacting 4@0 + 1@1 files
+2025/02/23-16:24:11.464 3580 Generated table #233@0: 106 keys, 39753 bytes
+2025/02/23-16:24:11.465 3580 Compacted 4@0 + 1@1 files => 39753 bytes
+2025/02/23-16:24:11.469 3580 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/02/23-16:24:11.471 3580 Delete type=2 #220
+2025/02/23-16:24:11.471 3580 Delete type=2 #223
+2025/02/23-16:24:11.471 3580 Delete type=2 #226
+2025/02/23-16:24:11.471 3580 Delete type=2 #228
+2025/02/23-16:24:11.471 3580 Delete type=2 #232
