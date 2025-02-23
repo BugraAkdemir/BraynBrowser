@@ -1,15 +1,16 @@
-2025/02/23-16:23:42.921 1938 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/02/23-16:23:42.928 1938 Recovering log #229
-2025/02/23-16:23:42.930 1938 Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000229.log 
-2025/02/23-16:24:11.443 3580 Level-0 table #232: started
-2025/02/23-16:24:11.450 3580 Level-0 table #232: 30108 bytes OK
-2025/02/23-16:24:11.454 3580 Delete type=0 #229
-2025/02/23-16:24:11.455 3580 Compacting 4@0 + 1@1 files
-2025/02/23-16:24:11.464 3580 Generated table #233@0: 106 keys, 39753 bytes
-2025/02/23-16:24:11.465 3580 Compacted 4@0 + 1@1 files => 39753 bytes
-2025/02/23-16:24:11.469 3580 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/02/23-16:24:11.471 3580 Delete type=2 #220
-2025/02/23-16:24:11.471 3580 Delete type=2 #223
-2025/02/23-16:24:11.471 3580 Delete type=2 #226
-2025/02/23-16:24:11.471 3580 Delete type=2 #228
-2025/02/23-16:24:11.471 3580 Delete type=2 #232
+2025/02/23-19:08:00.313 3cfc Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/02/23-19:08:00.322 3cfc Recovering log #242
+2025/02/23-19:08:00.323 3cfc Level-0 table #244: started
+2025/02/23-19:08:00.337 3cfc Level-0 table #244: 83642 bytes OK
+2025/02/23-19:08:00.338 3cfc Recovering log #243
+2025/02/23-19:08:00.341 3cfc Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000243.log 
+2025/02/23-19:08:00.346 3cfc Delete type=0 #242
+2025/02/23-19:08:00.347 d00 Compacting 4@0 + 1@1 files
+2025/02/23-19:08:00.359 d00 Generated table #245@0: 117 keys, 81236 bytes
+2025/02/23-19:08:00.359 d00 Compacted 4@0 + 1@1 files => 81236 bytes
+2025/02/23-19:08:00.362 d00 compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/02/23-19:08:00.363 d00 Delete type=2 #233
+2025/02/23-19:08:00.363 d00 Delete type=2 #236
+2025/02/23-19:08:00.363 d00 Delete type=2 #239
+2025/02/23-19:08:00.363 d00 Delete type=2 #241
+2025/02/23-19:08:00.363 d00 Delete type=2 #244

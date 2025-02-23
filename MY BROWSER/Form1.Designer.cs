@@ -45,6 +45,7 @@ namespace MY_BROWSER
             this.BTNcıkıs = new System.Windows.Forms.Button();
             this.TMRtakip = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.BTNapps = new System.Windows.Forms.Button();
             this.BTNindir = new System.Windows.Forms.Button();
             this.BTNgo = new System.Windows.Forms.Button();
@@ -251,6 +252,7 @@ namespace MY_BROWSER
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(102)))), ((int)(((byte)(187)))));
+            this.panel2.Controls.Add(this.progressBar1);
             this.panel2.Controls.Add(this.BTNapps);
             this.panel2.Controls.Add(this.BTNindir);
             this.panel2.Controls.Add(this.BTNgo);
@@ -262,6 +264,14 @@ namespace MY_BROWSER
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1218, 36);
             this.panel2.TabIndex = 5;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(129, 22);
+            this.progressBar1.Maximum = 60;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(622, 11);
+            this.progressBar1.TabIndex = 11;
             // 
             // BTNapps
             // 
@@ -336,7 +346,7 @@ namespace MY_BROWSER
             this.txtUrl.BackColor = System.Drawing.Color.AliceBlue;
             this.txtUrl.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUrl.Font = new System.Drawing.Font("Microsoft PhagsPa", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtUrl.Location = new System.Drawing.Point(129, 11);
+            this.txtUrl.Location = new System.Drawing.Point(129, 4);
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(622, 15);
             this.txtUrl.TabIndex = 6;
@@ -585,8 +595,10 @@ namespace MY_BROWSER
             this.webView21.TabIndex = 0;
             this.webView21.ZoomFactor = 1D;
             this.webView21.CoreWebView2InitializationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs>(this.webView21_CoreWebView2InitializationCompleted);
+            this.webView21.NavigationStarting += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationStartingEventArgs>(this.webView21_NavigationStarting);
             this.webView21.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.webView21_NavigationCompleted);
             this.webView21.SourceChanged += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs>(this.webView21_SourceChanged);
+            this.webView21.ContentLoading += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2ContentLoadingEventArgs>(this.webView21_ContentLoading);
             // 
             // PNLapps
             // 
@@ -787,6 +799,7 @@ namespace MY_BROWSER
         private System.Windows.Forms.Button BTNappsGPT;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BTNappsGmail;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

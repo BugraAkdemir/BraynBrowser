@@ -14,7 +14,9 @@ using System.Windows.Forms;
 using Microsoft.Web.WebView2;
 using Microsoft.Web.WebView2.Core;
 using Microsoft.Web.WebView2.WinForms;
+using Microsoft.Web.WebView2.Wpf;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace MY_BROWSER
 {
@@ -22,11 +24,11 @@ namespace MY_BROWSER
 	{
 		
 
-		public string versiontxt = "v1.9.4 - Closed Beta";
+		public string versiontxt = "v1.9.5 - Closed Beta";
         
         private int mevcutIndex = -1; // Başlangıçta bir sayfa ziyaret edilmediği için -1
         private bool pncKnt = false;
-		private bool ayarlarPNCkn = false;
+		
        
         private bool mouseDown = false;
 		private Point lastLocation;
@@ -38,7 +40,7 @@ namespace MY_BROWSER
 		private bool resizing = false; // Boyutlandırma aktif mi?
 		private Point lastMousePosition; // Son mouse konumu
 		private int borderSize = 5; // Kenarlardan kaç piksel içinde boyutlandırma çalışsın
-        private string indirilenlerKlasoru = "";
+        
 
         // Geçmişi tutan liste
         private List<string> history = new List<string>();
@@ -49,15 +51,30 @@ namespace MY_BROWSER
         public mainPage()
 		{
 			InitializeComponent();
-		   
 
+            // WebView2'yi başlatma ve olayları dinleme
+            webView21.EnsureCoreWebView2Async(null).ContinueWith(task =>
+            {
+                if (task.Exception != null)
+                {
+                    // Hata kontrolü yapılabilir
+                    MessageBox.Show("WebView2 başlatılırken hata oluştu.");
+                    return;
+                }
 
-		}
+                // WebView2 hazır olduğunda olayları bağlama
+                webView21.CoreWebView2.NavigationStarting += webView21_NavigationStarting;
+                webView21.CoreWebView2.ContentLoading += webView21_ContentLoading;
+                webView21.CoreWebView2.NavigationCompleted += webView21_NavigationCompleted;
+            }, TaskScheduler.FromCurrentSynchronizationContext());
+
+        }
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
 			verionLBL.Text = $"Uygulama Sürümü: {versiontxt}";
-
+            
+            
 
             if (!string.IsNullOrEmpty(Properties.Settings.Default.ArkaPlanRengi))
             {
@@ -766,6 +783,10 @@ namespace MY_BROWSER
                     mevcutIndex = kayitlar.Count - 1; // Mevcut indexi güncelle
                 }
             }
+
+            progressBar1.Style = ProgressBarStyle.Blocks;  // Blok stiline dön
+            progressBar1.Value = 60;  // ProgressBar'ı %100 yap
+            progressBar1.Visible = false;  // İsterseniz, tam yükleme sonrası gizleyebilirsiniz
         }
 
         private void txtUrl_TextChanged(object sender, EventArgs e)
@@ -1016,6 +1037,42 @@ namespace MY_BROWSER
             webView21.Location = new Point(0, 0);  // Panelin içinde sıfırdan başla
 
             PNLapps.Visible = false;
+        }
+
+        private void WebView2_CoreWebView2Ready(object sender, EventArgs e)
+        {
+            // Web sayfası yüklenmeye başladığında ProgressBar'ı başlatıyoruz
+            webView21.CoreWebView2.NavigationStarting += (navSender, navArgs) =>
+            {
+                progressBar1.Visible = true;  // ProgressBar'ı gösteriyoruz
+                progressBar1.Value = 0;  // ProgressBar'ı sıfırlıyoruz
+            };
+
+            // Web sayfası yüklenmeye devam ederken, ProgressBar'ı güncelliyoruz
+            webView21.CoreWebView2.ContentLoading += (loadSender, loadArgs) =>
+            {
+                progressBar1.Style = ProgressBarStyle.Marquee; // Yükleniyor stilini aktif ediyoruz
+            };
+
+            // Web sayfası tamamen yüklendiğinde, ProgressBar'ı tamamlıyoruz
+            webView21.CoreWebView2.NavigationCompleted += (compSender, compArgs) =>
+            {
+                progressBar1.Style = ProgressBarStyle.Blocks;  // ProgressBar'ı blok stiline döndürüyoruz
+                progressBar1.Value = 100;  // ProgressBar'ı %100 yapıyoruz
+                                           // Bir süre sonra ProgressBar'ı gizlemek isterseniz:
+                                           // progressBar1.Visible = false; // Yükleme tamamlandığında gizleyebiliriz
+            };
+        }
+
+        private void webView21_NavigationStarting(object sender, CoreWebView2NavigationStartingEventArgs e)
+        {
+            progressBar1.Visible = true;  // ProgressBar'ı göster
+            progressBar1.Value = 0;  // ProgressBar'ı sıfırla
+        }
+
+        private void webView21_ContentLoading(object sender, CoreWebView2ContentLoadingEventArgs e)
+        {
+            progressBar1.Style = ProgressBarStyle.Marquee;  // Yükleniyor stilini kullan
         }
     }
 }
