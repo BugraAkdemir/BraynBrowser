@@ -145,8 +145,11 @@
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mmb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mmb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dowBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dowBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,9 +172,6 @@
   <data name="pexels-pixabay-531880" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pexels-pixabay-531880.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dowBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dowBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,6 +180,9 @@
   </data>
   <data name="brBCK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\brBCK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BRAYN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BRAYN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,6 +205,9 @@
   <data name="Adsız tasarım (5)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adsız tasarım (5)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cıkısBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cıkısBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,11 +220,11 @@
   <data name="sb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mmb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mmb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minimaze" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minimaze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,7 +241,7 @@
   <data name="pncBt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pncBt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="yt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

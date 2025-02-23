@@ -30,3 +30,4 @@ https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwj-7--y
 https://www.youtube.com/
 https://www.youtube.com/watch?v=4jmWjMgc70c
 about:blank
+https://www.google.com/search?q= ss

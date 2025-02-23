@@ -45,6 +45,7 @@ namespace MY_BROWSER
             this.BTNcıkıs = new System.Windows.Forms.Button();
             this.TMRtakip = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BTNapps = new System.Windows.Forms.Button();
             this.BTNindir = new System.Windows.Forms.Button();
             this.BTNgo = new System.Windows.Forms.Button();
             this.refBTN = new System.Windows.Forms.Button();
@@ -69,6 +70,12 @@ namespace MY_BROWSER
             this.verionLBL = new System.Windows.Forms.Label();
             this.panelTrayıcı = new System.Windows.Forms.Panel();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.PNLapps = new System.Windows.Forms.Panel();
+            this.BTNappsGmail = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.BTNappsGPT = new System.Windows.Forms.Button();
+            this.BTNappsGOOGLE = new System.Windows.Forms.Button();
+            this.BTNappsYT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,6 +89,7 @@ namespace MY_BROWSER
             this.bilgiPanel.SuspendLayout();
             this.panelTrayıcı.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
+            this.PNLapps.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataİnput
@@ -243,6 +251,7 @@ namespace MY_BROWSER
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(102)))), ((int)(((byte)(187)))));
+            this.panel2.Controls.Add(this.BTNapps);
             this.panel2.Controls.Add(this.BTNindir);
             this.panel2.Controls.Add(this.BTNgo);
             this.panel2.Controls.Add(this.refBTN);
@@ -253,6 +262,19 @@ namespace MY_BROWSER
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1218, 36);
             this.panel2.TabIndex = 5;
+            // 
+            // BTNapps
+            // 
+            this.BTNapps.BackgroundImage = global::MY_BROWSER.Properties.Resources.BRAYN;
+            this.BTNapps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNapps.FlatAppearance.BorderSize = 0;
+            this.BTNapps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNapps.Location = new System.Drawing.Point(1077, 2);
+            this.BTNapps.Name = "BTNapps";
+            this.BTNapps.Size = new System.Drawing.Size(42, 34);
+            this.BTNapps.TabIndex = 10;
+            this.BTNapps.UseVisualStyleBackColor = true;
+            this.BTNapps.Click += new System.EventHandler(this.BTNapps_Click);
             // 
             // BTNindir
             // 
@@ -378,6 +400,14 @@ namespace MY_BROWSER
             this.iconList.Images.SetKeyName(3, "bilgiIC.png");
             this.iconList.Images.SetKeyName(4, "gecmisIC.png");
             this.iconList.Images.SetKeyName(5, "temaIC.png");
+            this.iconList.Images.SetKeyName(6, "ytIC.png");
+            this.iconList.Images.SetKeyName(7, "googleIC.png");
+            this.iconList.Images.SetKeyName(8, "chatgbtIC.png");
+            this.iconList.Images.SetKeyName(9, "chatGbtIC2.png");
+            this.iconList.Images.SetKeyName(10, "chatGptIC3.png");
+            this.iconList.Images.SetKeyName(11, "googletanslateIC.png");
+            this.iconList.Images.SetKeyName(12, "gmailIC.png");
+            this.iconList.Images.SetKeyName(13, "gmailIC2.png");
             // 
             // gemisBTN
             // 
@@ -558,6 +588,105 @@ namespace MY_BROWSER
             this.webView21.NavigationCompleted += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs>(this.webView21_NavigationCompleted);
             this.webView21.SourceChanged += new System.EventHandler<Microsoft.Web.WebView2.Core.CoreWebView2SourceChangedEventArgs>(this.webView21_SourceChanged);
             // 
+            // PNLapps
+            // 
+            this.PNLapps.BackColor = System.Drawing.SystemColors.Menu;
+            this.PNLapps.Controls.Add(this.BTNappsGmail);
+            this.PNLapps.Controls.Add(this.button1);
+            this.PNLapps.Controls.Add(this.BTNappsGPT);
+            this.PNLapps.Controls.Add(this.BTNappsGOOGLE);
+            this.PNLapps.Controls.Add(this.BTNappsYT);
+            this.PNLapps.Location = new System.Drawing.Point(457, 435);
+            this.PNLapps.Name = "PNLapps";
+            this.PNLapps.Size = new System.Drawing.Size(200, 161);
+            this.PNLapps.TabIndex = 10;
+            this.PNLapps.Visible = false;
+            // 
+            // BTNappsGmail
+            // 
+            this.BTNappsGmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNappsGmail.FlatAppearance.BorderSize = 0;
+            this.BTNappsGmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNappsGmail.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BTNappsGmail.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BTNappsGmail.ImageKey = "gmailIC.png";
+            this.BTNappsGmail.ImageList = this.iconList;
+            this.BTNappsGmail.Location = new System.Drawing.Point(49, 104);
+            this.BTNappsGmail.Name = "BTNappsGmail";
+            this.BTNappsGmail.Size = new System.Drawing.Size(102, 46);
+            this.BTNappsGmail.TabIndex = 15;
+            this.BTNappsGmail.Text = "Gmail";
+            this.BTNappsGmail.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BTNappsGmail.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.ImageKey = "googletanslateIC.png";
+            this.button1.ImageList = this.iconList;
+            this.button1.Location = new System.Drawing.Point(95, 55);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 46);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Ceviri";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // BTNappsGPT
+            // 
+            this.BTNappsGPT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNappsGPT.FlatAppearance.BorderSize = 0;
+            this.BTNappsGPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNappsGPT.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BTNappsGPT.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BTNappsGPT.ImageKey = "chatGptIC3.png";
+            this.BTNappsGPT.ImageList = this.iconList;
+            this.BTNappsGPT.Location = new System.Drawing.Point(3, 55);
+            this.BTNappsGPT.Name = "BTNappsGPT";
+            this.BTNappsGPT.Size = new System.Drawing.Size(102, 46);
+            this.BTNappsGPT.TabIndex = 13;
+            this.BTNappsGPT.Text = "CHAT GPT";
+            this.BTNappsGPT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BTNappsGPT.UseVisualStyleBackColor = true;
+            // 
+            // BTNappsGOOGLE
+            // 
+            this.BTNappsGOOGLE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNappsGOOGLE.FlatAppearance.BorderSize = 0;
+            this.BTNappsGOOGLE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNappsGOOGLE.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BTNappsGOOGLE.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BTNappsGOOGLE.ImageKey = "googleIC.png";
+            this.BTNappsGOOGLE.ImageList = this.iconList;
+            this.BTNappsGOOGLE.Location = new System.Drawing.Point(95, 3);
+            this.BTNappsGOOGLE.Name = "BTNappsGOOGLE";
+            this.BTNappsGOOGLE.Size = new System.Drawing.Size(102, 46);
+            this.BTNappsGOOGLE.TabIndex = 12;
+            this.BTNappsGOOGLE.Text = "GOOGLE";
+            this.BTNappsGOOGLE.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BTNappsGOOGLE.UseVisualStyleBackColor = true;
+            // 
+            // BTNappsYT
+            // 
+            this.BTNappsYT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNappsYT.FlatAppearance.BorderSize = 0;
+            this.BTNappsYT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNappsYT.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BTNappsYT.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BTNappsYT.ImageKey = "ytIC.png";
+            this.BTNappsYT.ImageList = this.iconList;
+            this.BTNappsYT.Location = new System.Drawing.Point(3, 3);
+            this.BTNappsYT.Name = "BTNappsYT";
+            this.BTNappsYT.Size = new System.Drawing.Size(102, 46);
+            this.BTNappsYT.TabIndex = 11;
+            this.BTNappsYT.Text = "YOUTUBE";
+            this.BTNappsYT.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BTNappsYT.UseVisualStyleBackColor = true;
+            // 
             // mainPage
             // 
             this.AllowDrop = true;
@@ -566,6 +695,7 @@ namespace MY_BROWSER
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1217, 656);
+            this.Controls.Add(this.PNLapps);
             this.Controls.Add(this.bilgiPanel);
             this.Controls.Add(this.gecmisPanel);
             this.Controls.Add(this.PNLtema);
@@ -601,6 +731,7 @@ namespace MY_BROWSER
             this.bilgiPanel.PerformLayout();
             this.panelTrayıcı.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
+            this.PNLapps.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -644,6 +775,13 @@ namespace MY_BROWSER
         private System.Windows.Forms.Button colorSecims;
         private System.Windows.Forms.Button resimSecims;
         private System.Windows.Forms.Button BTNindir;
+        private System.Windows.Forms.Button BTNapps;
+        private System.Windows.Forms.Panel PNLapps;
+        private System.Windows.Forms.Button BTNappsYT;
+        private System.Windows.Forms.Button BTNappsGOOGLE;
+        private System.Windows.Forms.Button BTNappsGPT;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BTNappsGmail;
     }
 }
 

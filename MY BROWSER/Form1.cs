@@ -22,7 +22,7 @@ namespace MY_BROWSER
 	{
 		
 
-		public string versiontxt = "v1.9.3 - Closed Beta";
+		public string versiontxt = "v1.9.4 - Closed Beta";
         
         private int mevcutIndex = -1; // Başlangıçta bir sayfa ziyaret edilmediği için -1
         private bool pncKnt = false;
@@ -190,6 +190,11 @@ namespace MY_BROWSER
             BTNindir.Top = topYuk;
             BTNindir.Left = this.ClientSize.Width - BTNindir.Width - 60;
 
+            PNLapps.Top = 83;
+            PNLapps.Left = this.ClientSize.Width - PNLapps.Width - 100;
+
+            BTNapps.Top = topYuk;
+            BTNapps.Left = this.ClientSize.Width - BTNapps.Width - 107;
 
             // Eğer panel görünüyorsa
             if (panelTrayıcı.Visible)
@@ -911,6 +916,11 @@ namespace MY_BROWSER
         private void mainPage_Click(object sender, EventArgs e)
         {
 			ayarlarPanel.Visible = false;
+        }
+
+        private void BTNapps_Click(object sender, EventArgs e)
+        {
+            PNLapps.Visible = !PNLapps.Visible;
         }
     }
 }
