@@ -1,0 +1,6 @@
+2025/02/23-13:07:05.465 3dd0 Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/02/23-13:07:05.474 3dd0 Recovering log #218
+2025/02/23-13:07:05.477 3dd0 Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000218.log 
+2025/02/23-13:07:15.274 3e58 Level-0 table #223: started
+2025/02/23-13:07:15.281 3e58 Level-0 table #223: 99286 bytes OK
+2025/02/23-13:07:15.285 3e58 Delete type=0 #218

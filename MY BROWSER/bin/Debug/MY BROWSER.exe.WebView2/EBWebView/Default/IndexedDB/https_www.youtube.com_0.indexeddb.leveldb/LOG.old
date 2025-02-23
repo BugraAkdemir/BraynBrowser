@@ -1,0 +1,6 @@
+2025/02/23-13:07:10.502 1fec Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/02/23-13:07:10.503 1fec Recovering log #16
+2025/02/23-13:07:10.508 1fec Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000016.log 
+2025/02/23-13:09:44.557 212c Level-0 table #21: started
+2025/02/23-13:09:44.570 212c Level-0 table #21: 1217628 bytes OK
+2025/02/23-13:09:44.573 212c Delete type=0 #16

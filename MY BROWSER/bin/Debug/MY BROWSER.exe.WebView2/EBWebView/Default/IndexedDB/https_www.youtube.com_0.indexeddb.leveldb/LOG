@@ -1,0 +1,9 @@
+2025/02/23-13:12:39.550 243c Reusing MANIFEST C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/02/23-13:12:39.550 243c Recovering log #20
+2025/02/23-13:12:39.551 243c Reusing old log C:\Users\bugra\Desktop\MY BROWSER\MY BROWSER\bin\Debug\MY BROWSER.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000020.log 
+2025/02/23-13:12:41.177 243c Compacting 1@1 + 1@2 files
+2025/02/23-13:12:41.184 243c Generated table #23@1: 546 keys, 42338 bytes
+2025/02/23-13:12:41.184 243c Compacted 1@1 + 1@2 files => 42338 bytes
+2025/02/23-13:12:41.186 243c compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/23-13:12:41.187 243c Delete type=2 #18
+2025/02/23-13:12:41.187 243c Delete type=2 #21
