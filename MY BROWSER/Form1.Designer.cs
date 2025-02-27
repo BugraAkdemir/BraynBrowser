@@ -77,6 +77,10 @@ namespace MY_BROWSER
             this.BTNappsGPT = new System.Windows.Forms.Button();
             this.BTNappsGOOGLE = new System.Windows.Forms.Button();
             this.BTNappsYT = new System.Windows.Forms.Button();
+            this.deskBildirim = new System.Windows.Forms.NotifyIcon(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -91,6 +95,7 @@ namespace MY_BROWSER
             this.panelTrayıcı.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.PNLapps.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataİnput
@@ -704,6 +709,41 @@ namespace MY_BROWSER
             this.BTNappsYT.UseVisualStyleBackColor = true;
             this.BTNappsYT.Click += new System.EventHandler(this.BTNappsYT_Click);
             // 
+            // deskBildirim
+            // 
+            this.deskBildirim.Icon = ((System.Drawing.Icon)(resources.GetObject("deskBildirim.Icon")));
+            this.deskBildirim.Text = "notifyIcon1";
+            this.deskBildirim.Visible = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(15, 448);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Visible = false;
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(31, 20);
+            this.toolStripMenuItem1.Text = "Sa";
+            // 
+            // saToolStripMenuItem
+            // 
+            this.saToolStripMenuItem.Name = "saToolStripMenuItem";
+            this.saToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.saToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saToolStripMenuItem.Text = "sa";
+            this.saToolStripMenuItem.Click += new System.EventHandler(this.saToolStripMenuItem_Click);
+            // 
             // mainPage
             // 
             this.AllowDrop = true;
@@ -712,6 +752,7 @@ namespace MY_BROWSER
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1217, 656);
+            this.Controls.Add(this.navBarPNL);
             this.Controls.Add(this.PNLapps);
             this.Controls.Add(this.bilgiPanel);
             this.Controls.Add(this.gecmisPanel);
@@ -719,10 +760,11 @@ namespace MY_BROWSER
             this.Controls.Add(this.panelTrayıcı);
             this.Controls.Add(this.ayarlarPanel);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.navBarPNL);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "mainPage";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -749,6 +791,8 @@ namespace MY_BROWSER
             this.panelTrayıcı.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             this.PNLapps.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -800,6 +844,10 @@ namespace MY_BROWSER
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BTNappsGmail;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.NotifyIcon deskBildirim;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem saToolStripMenuItem;
     }
 }
 

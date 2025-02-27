@@ -24,7 +24,8 @@ namespace MY_BROWSER
 	{
 		
 
-		public string versiontxt = "v1.9.5 - Closed Beta";
+		public string versiontxt = "v2.0" +
+            " - Closed Beta";
         
         private int mevcutIndex = -1; // Başlangıçta bir sayfa ziyaret edilmediği için -1
         private bool pncKnt = false;
@@ -72,6 +73,8 @@ namespace MY_BROWSER
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
+
+            
 			verionLBL.Text = $"Uygulama Sürümü: {versiontxt}";
             
             
@@ -99,7 +102,7 @@ namespace MY_BROWSER
 
 
 
-				this.Resize += new EventHandler(Form1_Resize);
+			this.Resize += new EventHandler(Form1_Resize);
 			pncKnt = false;
 
 			if (pncKnt == false)
@@ -397,7 +400,13 @@ namespace MY_BROWSER
 		}
 
 		private void mainPage_KeyDown(object sender, KeyEventArgs e)
-		{
+		{   
+            //if (e.Modifiers == Keys.Alt && e.KeyCode == Keys.F)
+            //{
+            //    MessageBox.Show("SASASA"); 
+            //}
+
+
 			if(e.KeyCode == Keys.F5)
 			{
 				refBTN.PerformClick();
@@ -464,25 +473,26 @@ namespace MY_BROWSER
 
 		}
 
+        
 		private void dataİnput_KeyDown(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode == Keys.Enter)
 			{
-				//string yeniKayit = dataİnput.Text.Trim(); // TextBox’tan veri al ve boşlukları temizle
+                //string yeniKayit = dataİnput.Text.Trim(); // TextBox’tan veri al ve boşlukları temizle
 
-				//if (!string.IsNullOrEmpty(yeniKayit)) // Boş girişleri engelle
-				//{
-				//    if (kayitlar.Count >= 3)
-				//    {
-				//        kayitlar.RemoveAt(0); // Listenin en eski elemanını sil
-				//    }
+                //if (!string.IsNullOrEmpty(yeniKayit)) // Boş girişleri engelle
+                //{
+                //    if (kayitlar.Count >= 3)
+                //    {
+                //        kayitlar.RemoveAt(0); // Listenin en eski elemanını sil
+                //    }
 
-				//    kayitlar.Add(yeniKayit); // Yeni kaydı listeye ekle
+                //    kayitlar.Add(yeniKayit); // Yeni kaydı listeye ekle
 
-				//    // Listeyi güncelle
+                //    // Listeyi güncelle
 
-				//}
-				
+                //}
+
 
                 // TextBox'ın içi boşsa, uyarı göster
                 if (string.IsNullOrEmpty(dataİnput.Text))
@@ -1073,6 +1083,24 @@ namespace MY_BROWSER
         private void webView21_ContentLoading(object sender, CoreWebView2ContentLoadingEventArgs e)
         {
             progressBar1.Style = ProgressBarStyle.Marquee;  // Yükleniyor stilini kullan
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            mainPage ana = new mainPage();
+
+            ana.Show();
+            this.Hide();
+        }
+
+        private void saToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("sa");
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
