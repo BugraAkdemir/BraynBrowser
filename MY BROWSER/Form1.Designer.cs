@@ -34,30 +34,13 @@ namespace MY_BROWSER
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainPage));
             this.dataİnput = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.navBarPNL = new System.Windows.Forms.Panel();
-            this.BTNev = new System.Windows.Forms.Button();
-            this.logoIMGbox = new System.Windows.Forms.PictureBox();
-            this.Btnfs = new System.Windows.Forms.Button();
-            this.pncBTN = new System.Windows.Forms.Button();
-            this.BTNminimaze = new System.Windows.Forms.Button();
-            this.BTNcıkıs = new System.Windows.Forms.Button();
             this.TMRtakip = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.BTNapps = new System.Windows.Forms.Button();
-            this.BTNindir = new System.Windows.Forms.Button();
-            this.BTNgo = new System.Windows.Forms.Button();
-            this.refBTN = new System.Windows.Forms.Button();
-            this.BTNback = new System.Windows.Forms.Button();
             this.txtUrl = new System.Windows.Forms.TextBox();
-            this.ayarlarBTN = new System.Windows.Forms.Button();
             this.ayarlarPanel = new System.Windows.Forms.Panel();
-            this.BTNtema = new System.Windows.Forms.Button();
             this.iconList = new System.Windows.Forms.ImageList(this.components);
-            this.gemisBTN = new System.Windows.Forms.Button();
-            this.BTNbilgi = new System.Windows.Forms.Button();
             this.gecmisPanel = new System.Windows.Forms.Panel();
             this.gecmisSil = new System.Windows.Forms.Button();
             this.gecmisList = new System.Windows.Forms.ListBox();
@@ -72,20 +55,34 @@ namespace MY_BROWSER
             this.panelTrayıcı = new System.Windows.Forms.Panel();
             this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
             this.PNLapps = new System.Windows.Forms.Panel();
+            this.deskBildirim = new System.Windows.Forms.NotifyIcon(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BTNev = new System.Windows.Forms.Button();
+            this.logoIMGbox = new System.Windows.Forms.PictureBox();
+            this.Btnfs = new System.Windows.Forms.Button();
+            this.pncBTN = new System.Windows.Forms.Button();
+            this.BTNminimaze = new System.Windows.Forms.Button();
+            this.BTNcıkıs = new System.Windows.Forms.Button();
             this.BTNappsGmail = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.BTNappsGPT = new System.Windows.Forms.Button();
             this.BTNappsGOOGLE = new System.Windows.Forms.Button();
             this.BTNappsYT = new System.Windows.Forms.Button();
-            this.deskBildirim = new System.Windows.Forms.NotifyIcon(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.saToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BTNtema = new System.Windows.Forms.Button();
+            this.gemisBTN = new System.Windows.Forms.Button();
+            this.BTNbilgi = new System.Windows.Forms.Button();
+            this.BTNapps = new System.Windows.Forms.Button();
+            this.BTNindir = new System.Windows.Forms.Button();
+            this.BTNgo = new System.Windows.Forms.Button();
+            this.refBTN = new System.Windows.Forms.Button();
+            this.BTNback = new System.Windows.Forms.Button();
+            this.ayarlarBTN = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.navBarPNL.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.logoIMGbox)).BeginInit();
             this.panel2.SuspendLayout();
             this.ayarlarPanel.SuspendLayout();
             this.gecmisPanel.SuspendLayout();
@@ -96,6 +93,9 @@ namespace MY_BROWSER
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
             this.PNLapps.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoIMGbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataİnput
@@ -126,28 +126,6 @@ namespace MY_BROWSER
             this.panel1.Size = new System.Drawing.Size(491, 208);
             this.panel1.TabIndex = 2;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::MY_BROWSER.Properties.Resources.ab;
-            this.pictureBox2.Location = new System.Drawing.Point(41, 110);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(419, 63);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::MY_BROWSER.Properties.Resources.AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(491, 57);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // navBarPNL
             // 
             this.navBarPNL.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -164,90 +142,6 @@ namespace MY_BROWSER
             this.navBarPNL.MouseDown += new System.Windows.Forms.MouseEventHandler(this.navBarPNL_MouseDown);
             this.navBarPNL.MouseMove += new System.Windows.Forms.MouseEventHandler(this.navBarPNL_MouseMove);
             this.navBarPNL.MouseUp += new System.Windows.Forms.MouseEventHandler(this.navBarPNL_MouseUp);
-            // 
-            // BTNev
-            // 
-            this.BTNev.BackColor = System.Drawing.Color.Transparent;
-            this.BTNev.BackgroundImage = global::MY_BROWSER.Properties.Resources.homeİcon;
-            this.BTNev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNev.FlatAppearance.BorderSize = 0;
-            this.BTNev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNev.Location = new System.Drawing.Point(75, 7);
-            this.BTNev.Name = "BTNev";
-            this.BTNev.Size = new System.Drawing.Size(33, 23);
-            this.BTNev.TabIndex = 5;
-            this.BTNev.UseVisualStyleBackColor = false;
-            this.BTNev.Click += new System.EventHandler(this.BTNev_Click);
-            // 
-            // logoIMGbox
-            // 
-            this.logoIMGbox.BackColor = System.Drawing.Color.Transparent;
-            this.logoIMGbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoIMGbox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.logoIMGbox.Image = global::MY_BROWSER.Properties.Resources.logo;
-            this.logoIMGbox.Location = new System.Drawing.Point(0, 0);
-            this.logoIMGbox.Name = "logoIMGbox";
-            this.logoIMGbox.Size = new System.Drawing.Size(60, 38);
-            this.logoIMGbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoIMGbox.TabIndex = 4;
-            this.logoIMGbox.TabStop = false;
-            this.logoIMGbox.UseWaitCursor = true;
-            // 
-            // Btnfs
-            // 
-            this.Btnfs.BackColor = System.Drawing.Color.Transparent;
-            this.Btnfs.BackgroundImage = global::MY_BROWSER.Properties.Resources.FFsC;
-            this.Btnfs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Btnfs.FlatAppearance.BorderSize = 0;
-            this.Btnfs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btnfs.Location = new System.Drawing.Point(1077, 3);
-            this.Btnfs.Name = "Btnfs";
-            this.Btnfs.Size = new System.Drawing.Size(42, 34);
-            this.Btnfs.TabIndex = 3;
-            this.Btnfs.UseVisualStyleBackColor = false;
-            this.Btnfs.Click += new System.EventHandler(this.Btnfs_Click);
-            // 
-            // pncBTN
-            // 
-            this.pncBTN.BackColor = System.Drawing.Color.Transparent;
-            this.pncBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.pnvv;
-            this.pncBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pncBTN.FlatAppearance.BorderSize = 0;
-            this.pncBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pncBTN.Location = new System.Drawing.Point(1125, 2);
-            this.pncBTN.Name = "pncBTN";
-            this.pncBTN.Size = new System.Drawing.Size(42, 34);
-            this.pncBTN.TabIndex = 2;
-            this.pncBTN.UseVisualStyleBackColor = false;
-            this.pncBTN.Click += new System.EventHandler(this.pncBTN_Click);
-            // 
-            // BTNminimaze
-            // 
-            this.BTNminimaze.BackColor = System.Drawing.Color.Transparent;
-            this.BTNminimaze.BackgroundImage = global::MY_BROWSER.Properties.Resources.mmb;
-            this.BTNminimaze.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNminimaze.FlatAppearance.BorderSize = 0;
-            this.BTNminimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNminimaze.Location = new System.Drawing.Point(1029, 3);
-            this.BTNminimaze.Name = "BTNminimaze";
-            this.BTNminimaze.Size = new System.Drawing.Size(42, 34);
-            this.BTNminimaze.TabIndex = 1;
-            this.BTNminimaze.UseVisualStyleBackColor = false;
-            this.BTNminimaze.Click += new System.EventHandler(this.BTNminimaze_Click);
-            // 
-            // BTNcıkıs
-            // 
-            this.BTNcıkıs.BackColor = System.Drawing.Color.Transparent;
-            this.BTNcıkıs.BackgroundImage = global::MY_BROWSER.Properties.Resources.EXİTbTN;
-            this.BTNcıkıs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNcıkıs.FlatAppearance.BorderSize = 0;
-            this.BTNcıkıs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNcıkıs.Location = new System.Drawing.Point(1174, 1);
-            this.BTNcıkıs.Name = "BTNcıkıs";
-            this.BTNcıkıs.Size = new System.Drawing.Size(42, 34);
-            this.BTNcıkıs.TabIndex = 0;
-            this.BTNcıkıs.UseVisualStyleBackColor = false;
-            this.BTNcıkıs.Click += new System.EventHandler(this.BTNcıkıs_Click);
             // 
             // TMRtakip
             // 
@@ -278,74 +172,6 @@ namespace MY_BROWSER
             this.progressBar1.Size = new System.Drawing.Size(622, 11);
             this.progressBar1.TabIndex = 11;
             // 
-            // BTNapps
-            // 
-            this.BTNapps.BackgroundImage = global::MY_BROWSER.Properties.Resources.BRAYN;
-            this.BTNapps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNapps.FlatAppearance.BorderSize = 0;
-            this.BTNapps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNapps.Location = new System.Drawing.Point(1077, 2);
-            this.BTNapps.Name = "BTNapps";
-            this.BTNapps.Size = new System.Drawing.Size(42, 34);
-            this.BTNapps.TabIndex = 10;
-            this.BTNapps.UseVisualStyleBackColor = true;
-            this.BTNapps.Click += new System.EventHandler(this.BTNapps_Click);
-            // 
-            // BTNindir
-            // 
-            this.BTNindir.BackgroundImage = global::MY_BROWSER.Properties.Resources.AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası_Kopyası__5_;
-            this.BTNindir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNindir.FlatAppearance.BorderSize = 0;
-            this.BTNindir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNindir.Location = new System.Drawing.Point(1125, 2);
-            this.BTNindir.Name = "BTNindir";
-            this.BTNindir.Size = new System.Drawing.Size(42, 34);
-            this.BTNindir.TabIndex = 10;
-            this.BTNindir.UseVisualStyleBackColor = true;
-            this.BTNindir.Click += new System.EventHandler(this.button1_Click_2);
-            // 
-            // BTNgo
-            // 
-            this.BTNgo.BackColor = System.Drawing.Color.Transparent;
-            this.BTNgo.BackgroundImage = global::MY_BROWSER.Properties.Resources.goFardddd;
-            this.BTNgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNgo.FlatAppearance.BorderSize = 0;
-            this.BTNgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNgo.Location = new System.Drawing.Point(51, 6);
-            this.BTNgo.Name = "BTNgo";
-            this.BTNgo.Size = new System.Drawing.Size(33, 23);
-            this.BTNgo.TabIndex = 9;
-            this.BTNgo.UseVisualStyleBackColor = false;
-            this.BTNgo.Click += new System.EventHandler(this.BTNgo_Click);
-            // 
-            // refBTN
-            // 
-            this.refBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.reflash;
-            this.refBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.refBTN.FlatAppearance.BorderSize = 0;
-            this.refBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.refBTN.Location = new System.Drawing.Point(90, 6);
-            this.refBTN.Name = "refBTN";
-            this.refBTN.Size = new System.Drawing.Size(33, 23);
-            this.refBTN.TabIndex = 8;
-            this.refBTN.UseVisualStyleBackColor = true;
-            this.refBTN.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // BTNback
-            // 
-            this.BTNback.BackColor = System.Drawing.Color.Transparent;
-            this.BTNback.BackgroundImage = global::MY_BROWSER.Properties.Resources.back;
-            this.BTNback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNback.FlatAppearance.BorderSize = 0;
-            this.BTNback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNback.ImageKey = "(none)";
-            this.BTNback.Location = new System.Drawing.Point(12, 6);
-            this.BTNback.Name = "BTNback";
-            this.BTNback.Size = new System.Drawing.Size(33, 23);
-            this.BTNback.TabIndex = 6;
-            this.BTNback.UseVisualStyleBackColor = false;
-            this.BTNback.Click += new System.EventHandler(this.BTNback_Click);
-            // 
             // txtUrl
             // 
             this.txtUrl.BackColor = System.Drawing.Color.AliceBlue;
@@ -361,20 +187,6 @@ namespace MY_BROWSER
             this.txtUrl.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUrl_KeyDown);
             this.txtUrl.Leave += new System.EventHandler(this.txtUrl_Leave);
             // 
-            // ayarlarBTN
-            // 
-            this.ayarlarBTN.BackColor = System.Drawing.Color.Transparent;
-            this.ayarlarBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası_Kopyası__1_;
-            this.ayarlarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ayarlarBTN.FlatAppearance.BorderSize = 0;
-            this.ayarlarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ayarlarBTN.Location = new System.Drawing.Point(1173, 2);
-            this.ayarlarBTN.Name = "ayarlarBTN";
-            this.ayarlarBTN.Size = new System.Drawing.Size(42, 34);
-            this.ayarlarBTN.TabIndex = 4;
-            this.ayarlarBTN.UseVisualStyleBackColor = false;
-            this.ayarlarBTN.Click += new System.EventHandler(this.ayarlarBTN_Click);
-            // 
             // ayarlarPanel
             // 
             this.ayarlarPanel.BackColor = System.Drawing.SystemColors.Menu;
@@ -386,24 +198,6 @@ namespace MY_BROWSER
             this.ayarlarPanel.Size = new System.Drawing.Size(283, 513);
             this.ayarlarPanel.TabIndex = 6;
             this.ayarlarPanel.Visible = false;
-            // 
-            // BTNtema
-            // 
-            this.BTNtema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BTNtema.FlatAppearance.BorderSize = 0;
-            this.BTNtema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNtema.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BTNtema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNtema.ImageKey = "temaIC.png";
-            this.BTNtema.ImageList = this.iconList;
-            this.BTNtema.Location = new System.Drawing.Point(16, 43);
-            this.BTNtema.Name = "BTNtema";
-            this.BTNtema.Size = new System.Drawing.Size(95, 33);
-            this.BTNtema.TabIndex = 10;
-            this.BTNtema.Text = "TEMA";
-            this.BTNtema.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BTNtema.UseVisualStyleBackColor = true;
-            this.BTNtema.Click += new System.EventHandler(this.BTNtema_Click);
             // 
             // iconList
             // 
@@ -423,42 +217,9 @@ namespace MY_BROWSER
             this.iconList.Images.SetKeyName(11, "googletanslateIC.png");
             this.iconList.Images.SetKeyName(12, "gmailIC.png");
             this.iconList.Images.SetKeyName(13, "gmailIC2.png");
-            // 
-            // gemisBTN
-            // 
-            this.gemisBTN.BackColor = System.Drawing.Color.Transparent;
-            this.gemisBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gemisBTN.FlatAppearance.BorderSize = 0;
-            this.gemisBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gemisBTN.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.gemisBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.gemisBTN.ImageKey = "gecmisIC.png";
-            this.gemisBTN.ImageList = this.iconList;
-            this.gemisBTN.Location = new System.Drawing.Point(170, 13);
-            this.gemisBTN.Name = "gemisBTN";
-            this.gemisBTN.Size = new System.Drawing.Size(103, 23);
-            this.gemisBTN.TabIndex = 8;
-            this.gemisBTN.Text = "GECMİS";
-            this.gemisBTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.gemisBTN.UseVisualStyleBackColor = false;
-            this.gemisBTN.Click += new System.EventHandler(this.gemisBTN_Click);
-            // 
-            // BTNbilgi
-            // 
-            this.BTNbilgi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.BTNbilgi.FlatAppearance.BorderSize = 0;
-            this.BTNbilgi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BTNbilgi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BTNbilgi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BTNbilgi.ImageKey = "bilgiIC.png";
-            this.BTNbilgi.ImageList = this.iconList;
-            this.BTNbilgi.Location = new System.Drawing.Point(13, 12);
-            this.BTNbilgi.Name = "BTNbilgi";
-            this.BTNbilgi.Size = new System.Drawing.Size(110, 23);
-            this.BTNbilgi.TabIndex = 0;
-            this.BTNbilgi.Text = "BİLGİ";
-            this.BTNbilgi.UseVisualStyleBackColor = true;
-            this.BTNbilgi.Click += new System.EventHandler(this.button1_Click);
+            this.iconList.Images.SetKeyName(14, "Info.ico");
+            this.iconList.Images.SetKeyName(15, "Paint Roller.ico");
+            this.iconList.Images.SetKeyName(16, "Time Machine.ico");
             // 
             // gecmisPanel
             // 
@@ -619,6 +380,125 @@ namespace MY_BROWSER
             this.PNLapps.TabIndex = 10;
             this.PNLapps.Visible = false;
             // 
+            // deskBildirim
+            // 
+            this.deskBildirim.Icon = ((System.Drawing.Icon)(resources.GetObject("deskBildirim.Icon")));
+            this.deskBildirim.Text = "notifyIcon1";
+            this.deskBildirim.Visible = true;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(15, 448);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Visible = false;
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(31, 20);
+            this.toolStripMenuItem1.Text = "Sa";
+            // 
+            // saToolStripMenuItem
+            // 
+            this.saToolStripMenuItem.Name = "saToolStripMenuItem";
+            this.saToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.saToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.saToolStripMenuItem.Text = "sa";
+            this.saToolStripMenuItem.Click += new System.EventHandler(this.saToolStripMenuItem_Click);
+            // 
+            // BTNev
+            // 
+            this.BTNev.BackColor = System.Drawing.Color.Transparent;
+            this.BTNev.BackgroundImage = global::MY_BROWSER.Properties.Resources.homeİcon;
+            this.BTNev.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNev.FlatAppearance.BorderSize = 0;
+            this.BTNev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNev.Location = new System.Drawing.Point(75, 7);
+            this.BTNev.Name = "BTNev";
+            this.BTNev.Size = new System.Drawing.Size(33, 23);
+            this.BTNev.TabIndex = 5;
+            this.BTNev.UseVisualStyleBackColor = false;
+            this.BTNev.Click += new System.EventHandler(this.BTNev_Click);
+            // 
+            // logoIMGbox
+            // 
+            this.logoIMGbox.BackColor = System.Drawing.Color.Transparent;
+            this.logoIMGbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoIMGbox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.logoIMGbox.Image = global::MY_BROWSER.Properties.Resources.logo;
+            this.logoIMGbox.Location = new System.Drawing.Point(0, 0);
+            this.logoIMGbox.Name = "logoIMGbox";
+            this.logoIMGbox.Size = new System.Drawing.Size(60, 38);
+            this.logoIMGbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoIMGbox.TabIndex = 4;
+            this.logoIMGbox.TabStop = false;
+            this.logoIMGbox.UseWaitCursor = true;
+            // 
+            // Btnfs
+            // 
+            this.Btnfs.BackColor = System.Drawing.Color.Transparent;
+            this.Btnfs.BackgroundImage = global::MY_BROWSER.Properties.Resources.FFsC;
+            this.Btnfs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Btnfs.FlatAppearance.BorderSize = 0;
+            this.Btnfs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnfs.Location = new System.Drawing.Point(1077, 3);
+            this.Btnfs.Name = "Btnfs";
+            this.Btnfs.Size = new System.Drawing.Size(42, 34);
+            this.Btnfs.TabIndex = 3;
+            this.Btnfs.UseVisualStyleBackColor = false;
+            this.Btnfs.Click += new System.EventHandler(this.Btnfs_Click);
+            // 
+            // pncBTN
+            // 
+            this.pncBTN.BackColor = System.Drawing.Color.Transparent;
+            this.pncBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.pnvv;
+            this.pncBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pncBTN.FlatAppearance.BorderSize = 0;
+            this.pncBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pncBTN.Location = new System.Drawing.Point(1125, 2);
+            this.pncBTN.Name = "pncBTN";
+            this.pncBTN.Size = new System.Drawing.Size(42, 34);
+            this.pncBTN.TabIndex = 2;
+            this.pncBTN.UseVisualStyleBackColor = false;
+            this.pncBTN.Click += new System.EventHandler(this.pncBTN_Click);
+            // 
+            // BTNminimaze
+            // 
+            this.BTNminimaze.BackColor = System.Drawing.Color.Transparent;
+            this.BTNminimaze.BackgroundImage = global::MY_BROWSER.Properties.Resources.mmb;
+            this.BTNminimaze.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNminimaze.FlatAppearance.BorderSize = 0;
+            this.BTNminimaze.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNminimaze.Location = new System.Drawing.Point(1029, 3);
+            this.BTNminimaze.Name = "BTNminimaze";
+            this.BTNminimaze.Size = new System.Drawing.Size(42, 34);
+            this.BTNminimaze.TabIndex = 1;
+            this.BTNminimaze.UseVisualStyleBackColor = false;
+            this.BTNminimaze.Click += new System.EventHandler(this.BTNminimaze_Click);
+            // 
+            // BTNcıkıs
+            // 
+            this.BTNcıkıs.BackColor = System.Drawing.Color.Transparent;
+            this.BTNcıkıs.BackgroundImage = global::MY_BROWSER.Properties.Resources.EXİTbTN;
+            this.BTNcıkıs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNcıkıs.FlatAppearance.BorderSize = 0;
+            this.BTNcıkıs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNcıkıs.Location = new System.Drawing.Point(1174, 1);
+            this.BTNcıkıs.Name = "BTNcıkıs";
+            this.BTNcıkıs.Size = new System.Drawing.Size(42, 34);
+            this.BTNcıkıs.TabIndex = 0;
+            this.BTNcıkıs.UseVisualStyleBackColor = false;
+            this.BTNcıkıs.Click += new System.EventHandler(this.BTNcıkıs_Click);
+            // 
             // BTNappsGmail
             // 
             this.BTNappsGmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -709,40 +589,163 @@ namespace MY_BROWSER
             this.BTNappsYT.UseVisualStyleBackColor = true;
             this.BTNappsYT.Click += new System.EventHandler(this.BTNappsYT_Click);
             // 
-            // deskBildirim
+            // BTNtema
             // 
-            this.deskBildirim.Icon = ((System.Drawing.Icon)(resources.GetObject("deskBildirim.Icon")));
-            this.deskBildirim.Text = "notifyIcon1";
-            this.deskBildirim.Visible = true;
+            this.BTNtema.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BTNtema.FlatAppearance.BorderSize = 0;
+            this.BTNtema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNtema.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BTNtema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNtema.ImageKey = "Paint Roller.ico";
+            this.BTNtema.ImageList = this.iconList;
+            this.BTNtema.Location = new System.Drawing.Point(16, 43);
+            this.BTNtema.Name = "BTNtema";
+            this.BTNtema.Size = new System.Drawing.Size(95, 33);
+            this.BTNtema.TabIndex = 10;
+            this.BTNtema.Text = "TEMA";
+            this.BTNtema.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BTNtema.UseVisualStyleBackColor = true;
+            this.BTNtema.Click += new System.EventHandler(this.BTNtema_Click);
             // 
-            // menuStrip1
+            // gemisBTN
             // 
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(15, 448);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(202, 24);
-            this.menuStrip1.TabIndex = 11;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Visible = false;
+            this.gemisBTN.BackColor = System.Drawing.Color.Transparent;
+            this.gemisBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gemisBTN.FlatAppearance.BorderSize = 0;
+            this.gemisBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gemisBTN.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.gemisBTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.gemisBTN.ImageKey = "Time Machine.ico";
+            this.gemisBTN.ImageList = this.iconList;
+            this.gemisBTN.Location = new System.Drawing.Point(170, 13);
+            this.gemisBTN.Name = "gemisBTN";
+            this.gemisBTN.Size = new System.Drawing.Size(103, 23);
+            this.gemisBTN.TabIndex = 8;
+            this.gemisBTN.Text = "GECMİS";
+            this.gemisBTN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.gemisBTN.UseVisualStyleBackColor = false;
+            this.gemisBTN.Click += new System.EventHandler(this.gemisBTN_Click);
             // 
-            // toolStripMenuItem1
+            // BTNbilgi
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.saToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(31, 20);
-            this.toolStripMenuItem1.Text = "Sa";
+            this.BTNbilgi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNbilgi.FlatAppearance.BorderSize = 0;
+            this.BTNbilgi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNbilgi.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BTNbilgi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BTNbilgi.ImageKey = "Info.ico";
+            this.BTNbilgi.ImageList = this.iconList;
+            this.BTNbilgi.Location = new System.Drawing.Point(13, 12);
+            this.BTNbilgi.Name = "BTNbilgi";
+            this.BTNbilgi.Size = new System.Drawing.Size(110, 23);
+            this.BTNbilgi.TabIndex = 0;
+            this.BTNbilgi.Text = "BİLGİ";
+            this.BTNbilgi.UseVisualStyleBackColor = true;
+            this.BTNbilgi.Click += new System.EventHandler(this.button1_Click);
             // 
-            // saToolStripMenuItem
+            // BTNapps
             // 
-            this.saToolStripMenuItem.Name = "saToolStripMenuItem";
-            this.saToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.saToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saToolStripMenuItem.Text = "sa";
-            this.saToolStripMenuItem.Click += new System.EventHandler(this.saToolStripMenuItem_Click);
+            this.BTNapps.BackgroundImage = global::MY_BROWSER.Properties.Resources.apps;
+            this.BTNapps.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNapps.FlatAppearance.BorderSize = 0;
+            this.BTNapps.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNapps.Location = new System.Drawing.Point(1077, 2);
+            this.BTNapps.Name = "BTNapps";
+            this.BTNapps.Size = new System.Drawing.Size(42, 34);
+            this.BTNapps.TabIndex = 10;
+            this.BTNapps.UseVisualStyleBackColor = true;
+            this.BTNapps.Click += new System.EventHandler(this.BTNapps_Click);
+            // 
+            // BTNindir
+            // 
+            this.BTNindir.BackgroundImage = global::MY_BROWSER.Properties.Resources.Download_1;
+            this.BTNindir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNindir.FlatAppearance.BorderSize = 0;
+            this.BTNindir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNindir.Location = new System.Drawing.Point(1125, 2);
+            this.BTNindir.Name = "BTNindir";
+            this.BTNindir.Size = new System.Drawing.Size(42, 34);
+            this.BTNindir.TabIndex = 10;
+            this.BTNindir.UseVisualStyleBackColor = true;
+            this.BTNindir.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // BTNgo
+            // 
+            this.BTNgo.BackColor = System.Drawing.Color.Transparent;
+            this.BTNgo.BackgroundImage = global::MY_BROWSER.Properties.Resources.goFardddd;
+            this.BTNgo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNgo.FlatAppearance.BorderSize = 0;
+            this.BTNgo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNgo.Location = new System.Drawing.Point(51, 6);
+            this.BTNgo.Name = "BTNgo";
+            this.BTNgo.Size = new System.Drawing.Size(33, 23);
+            this.BTNgo.TabIndex = 9;
+            this.BTNgo.UseVisualStyleBackColor = false;
+            this.BTNgo.Click += new System.EventHandler(this.BTNgo_Click);
+            // 
+            // refBTN
+            // 
+            this.refBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.reflash;
+            this.refBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.refBTN.FlatAppearance.BorderSize = 0;
+            this.refBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refBTN.Location = new System.Drawing.Point(90, 6);
+            this.refBTN.Name = "refBTN";
+            this.refBTN.Size = new System.Drawing.Size(33, 23);
+            this.refBTN.TabIndex = 8;
+            this.refBTN.UseVisualStyleBackColor = true;
+            this.refBTN.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // BTNback
+            // 
+            this.BTNback.BackColor = System.Drawing.Color.Transparent;
+            this.BTNback.BackgroundImage = global::MY_BROWSER.Properties.Resources.back;
+            this.BTNback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BTNback.FlatAppearance.BorderSize = 0;
+            this.BTNback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BTNback.ImageKey = "(none)";
+            this.BTNback.Location = new System.Drawing.Point(12, 6);
+            this.BTNback.Name = "BTNback";
+            this.BTNback.Size = new System.Drawing.Size(33, 23);
+            this.BTNback.TabIndex = 6;
+            this.BTNback.UseVisualStyleBackColor = false;
+            this.BTNback.Click += new System.EventHandler(this.BTNback_Click);
+            // 
+            // ayarlarBTN
+            // 
+            this.ayarlarBTN.BackColor = System.Drawing.Color.Transparent;
+            this.ayarlarBTN.BackgroundImage = global::MY_BROWSER.Properties.Resources.Automatic;
+            this.ayarlarBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ayarlarBTN.FlatAppearance.BorderSize = 0;
+            this.ayarlarBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ayarlarBTN.Location = new System.Drawing.Point(1173, 2);
+            this.ayarlarBTN.Name = "ayarlarBTN";
+            this.ayarlarBTN.Size = new System.Drawing.Size(42, 34);
+            this.ayarlarBTN.TabIndex = 4;
+            this.ayarlarBTN.UseVisualStyleBackColor = false;
+            this.ayarlarBTN.Click += new System.EventHandler(this.ayarlarBTN_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::MY_BROWSER.Properties.Resources.ab;
+            this.pictureBox2.Location = new System.Drawing.Point(41, 110);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(419, 63);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::MY_BROWSER.Properties.Resources.AKD_CARGO__300_x_150_piksel___727_x_150_piksel__Kopyası__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(491, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // mainPage
             // 
@@ -776,10 +779,7 @@ namespace MY_BROWSER
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.navBarPNL.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.logoIMGbox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ayarlarPanel.ResumeLayout(false);
@@ -793,6 +793,9 @@ namespace MY_BROWSER
             this.PNLapps.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoIMGbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

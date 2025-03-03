@@ -24,7 +24,7 @@ namespace MY_BROWSER
 	{
 		
 
-		public string versiontxt = "v2.0" +
+		public string versiontxt = "v2.5" +
             " - Closed Beta";
         
         private int mevcutIndex = -1; // Başlangıçta bir sayfa ziyaret edilmediği için -1

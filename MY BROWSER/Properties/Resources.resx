@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="homeİcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\homeİcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="yt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pexels-pixabay-531880" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pexels-pixabay-531880.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ForestBC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ForestBC.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -138,6 +141,9 @@
   </data>
   <data name="TemaBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TemaBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Automatic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Automatic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,17 +169,20 @@
   <data name="goFardddd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goFardddd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sonBu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sonBu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="homeİcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\homeİcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FFsC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FFsC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pexels-pixabay-531880" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pexels-pixabay-531880.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pncBt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pncBt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="X" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sonBu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sonBu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Adsız tasarım (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adsız tasarım (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,11 +202,14 @@
   <data name="AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AKD CARGO (300 x 150 piksel) (727 x 150 piksel) Kopyası Kopyası (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Download" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pnvv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pnvv.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\apps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bilgiBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bilgiBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,10 +250,10 @@
   <data name="gecmisBTN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gecmisBTN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pncBt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pncBt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="yt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Download_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Download_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
